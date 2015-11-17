@@ -1,0 +1,23 @@
+{
+  "name": "hyp",
+  "version": "1.0.0",
+  "description": "hypproject",
+  "main": "hyp",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "test"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "hyp",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-sass": "^2.0.4"
+  }
+}
