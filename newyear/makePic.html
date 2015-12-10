@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+	<script type="text/javascript">
+		if(/Android (\d+\.\d+)/.test(navigator.userAgent)){
+			var version = parseFloat(RegExp.$1);
+			if(version>2.3){
+				var phoneScale = parseInt(window.screen.width)/640;
+				document.write('<meta name="viewport" content="width=640, minimum-scale = '+ phoneScale +', maximum-scale = '+ phoneScale +', target-densitydpi=device-dpi">');
+			}else{
+				document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+			}
+		}else{
+			document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+		}
+		//微信去掉下方刷新栏
+		if(navigator.userAgent.indexOf('MicroMessenger') >= 0){
+			document.addEventListener('WeixinJSBridgeReady', function() {
+				//WeixinJSBridge.call('hideToolbar');
+			});
+		}
+	</script>
+    <title>新年电子贺卡</title>
+	<link href="statics/css/content.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<audio autoplay="autoplay" loop="loop" src="statics/media/GetUp.mp3" id="Player" style="display:none;position:absolute;opacity:0">
+			您的浏览器不支持音频标签，建议换一个进行尝试哦~
+	</audio>
+	<div class="container container9">
+	<!--<textarea id="a" style="width:100%;height:50%;position:absolute;z-index:120"></textarea>-->
+		<div class="line8"></div>
+		<div class="picDiv">
+			<div class="give">
+				<img id="sunImg" alt="sunImg" src="statics/images/sunImg.png"/>
+				<a id="upBtn" href="javascript:;"><span>点击上传照片</span></a>
+				<a class="yesBtn yes1" href="javascript:;"><img class="yesImg" alt="完成图片" src="statics/images/yes.png"/></a>
+				<a class="yesBtn yes2" href="javascript:;"><img class="yesImg" alt="完成图片" src="statics/images/yes.png"/></a>
+				<a class="yesBtn yes3" href="javascript:;"><img class="yesImg" alt="完成图片" src="statics/images/yes.png"/></a>
+				<a class="yesBtn add" href="javascript:;"><img class="yesImg" alt="完成图片" src="statics/images/plus.png"/></a>
+				<form id="form">
+					<input name="file1" id="file1" type="file"/> 
+					<input name="file2" id="file2" type="file"/> 
+					<input name="file3" id="file3" type="file"/> 
+					<!--
+					<input name="choose" class="to input1" type="text" value="选择相片进行编辑" readonly/>
+					<p class="inputs input2" type="text">自己写祝福</p>
+					<input name="text1" class="inputs input3" type="text" placeholder="相片1文案"/>
+					<input name="text2" class="inputs input4" type="text" placeholder="相片2文案"/>
+					<input name="text3" class="inputs input5" type="text" placeholder="相片3文案"/>
+					<input name="text4" class="inputs input6" type="text" placeholder="相片4文案"/>
+					<input name="text5" class="inputs input7" type="text" placeholder="相片5文案"/>
+					-->
+				</form>
+				
+			</div>
+		</div>
+		<a id="saveBtn" href="javascript:;"><img class="saveImg" alt="生成按钮" src="statics/images/saveBtn.png"/></a>
+		<img class="feibo" alt="feibo" src="statics/images/feibo.png"/>
+	</div>
+	<span class="music_button"><i class="music stp"></i></span>
+	<span id="tips">打开</span>
+	<div id="wait">
+		<p style=""><img class="waitImg" alt="等待图片" src="statics/images/waitImg.png"/></p>
+		<p class="waitSpan">努力生成中...</p>
+		<div id="waitDot">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<div id="waitBg"></div>
+	<script src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
+		<script src="sea-base/seajs/seajs/2.2.0/sea.js"></script>
+		<script>
+			// Set configuration
+			seajs.config({
+				base: "sea-base/",
+				alias: {
+				}
+			});
+			// For development
+			if (location.href.indexOf("?dev") > 0) {
+				seajs.use("./sea-modules/make");
+			}
+			else {
+				seajs.use("./sea-modules/make");
+			}
+	
+		</script>
+</body>
+</html>

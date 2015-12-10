@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>清新新年贺卡</title>
+  <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=no" />
+  <meta name="format-detection" content="telephone=no"/>
+  <meta http-equiv="Expires" CONTENT="0">  
+  <meta http-equiv="Cache-Control" CONTENT="no-cache">  
+  <meta http-equiv="Pragma" CONTENT="no-cache"> 
+</head>
+<body >
+   <p id="check_explorer">请在微信浏览器中打开哦...</p>
+   <script src="http://libs.baidu.com/jquery/1.7.1/jquery.min.js"></script>
+   <script type="text/javascript" src="../tj.js"></script> 
+   <script type="text/javascript">
+    function is_weixin(){
+        var ua = navigator.userAgent.toLowerCase();
+        if(ua.match(/MicroMessenger/i)=="micromessenger"){
+          return true;
+        } else {
+          return false;
+        }
+    }
+    var check=is_weixin();
+    if(check==true){
+        window.location="index.html";
+   }
+  </script>
+</body>
+</html>
