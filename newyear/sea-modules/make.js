@@ -42,7 +42,7 @@ define(function(require) {
 					to=encodeURI(to);
 					content=encodeURI(content);
 					content=encodeURI(content);
-					window.location="/other/hekaqx/makePic.html?from="+from+"&to="+to+"&content="+content;
+					window.location="./makePic.html?from="+from+"&to="+to+"&content="+content;
 				}
 				else{
 					alert("信息没填写完整哈");
@@ -81,7 +81,7 @@ define(function(require) {
 		$("#file1").on("change",function(){
 			//alert(this.files[0].name.split(".")[1]);
 			var format=this.files[0].name.split(".")[1].toLowerCase();
-			if(format=="jpg"||format=="png"||format=="gif")
+			if(1)
 			{
 				var myfile = this.files[0];
 				reader = new FileReader();
@@ -101,7 +101,7 @@ define(function(require) {
 		$("#file2").on("change",function(){
 			//alert(this.files[0].name.split(".")[1]);
 			var format=this.files[0].name.split(".")[1].toLowerCase();
-			if(format=="jpg"||format=="png"||format=="gif")
+			if(1)
 			{
 				var myfile = this.files[0];
 				reader = new FileReader();
@@ -119,7 +119,7 @@ define(function(require) {
 		$("#file3").on("change",function(){
 			//alert(this.files[0].name.split(".")[1]);
 			var format=this.files[0].name.split(".")[1].toLowerCase();
-			if(format=="jpg"||format=="png"||format=="gif")
+			if(1)
 			{
 				var myfile = this.files[0];
 				reader = new FileReader();
