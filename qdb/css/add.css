@@ -1,0 +1,287 @@
+/*靠左边的文字*/
+.left-tips{
+    font-size: 16px;
+    color: #333;
+}
+/*tab切换*/
+.tab-block{
+    margin: 10px auto;
+    padding: 0 15px;
+    height: 49px;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    background: #fff;
+    line-height: 49px;
+}
+.tab1,.tab2{
+    line-height: 14px;
+    font-size: 14px;
+    border:1px solid #999999;
+    padding: 6px 13px;
+}
+.tab1{
+    margin-left: 36px;
+}
+.tab2{
+    margin-left: 12px;
+}
+.tab.active{
+    border: 1px solid #006699;
+    color: #006699;
+}
+/*各个行的统一样式*/
+.item{
+
+}
+.item .info{
+    line-height: 50px;
+    height: 50px;
+    border-bottom: 1px solid #e7e7e7;
+    background: #fff;
+    padding: 0 15px;
+}
+.base-info{
+    border-top: 1px solid #e7e7e7;
+}
+.add-pic .left-tips{
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 20px;
+
+}
+.add-pic{
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    margin-top: 10px;
+    padding: 0 15px;
+    background: #fff;
+    height: 100px;
+}
+.item .plus{
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    float: right;
+    border: 1px solid #006699;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    line-height: 16px;
+    text-align: center;
+    color: #006699;
+}
+/*加图片logo*/
+.add-pic-logo{
+    position: relative;
+    margin-left: 20px;
+    margin-top: 19px;
+    width: 58px;
+    display: inline-block;
+    font-size: 48px;
+    height: 58px;
+    border: 2px dashed;
+    line-height: 48px;
+    text-align: center;
+    color: #ccc;
+}
+/*加图片右上角小图标*/
+.add-pic-logo .cut{
+    position: absolute;
+    right: -9px;
+    top: -9px;
+    font-size: 16px;
+    border: 1px solid #ff9900;
+    color: #ff9900;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    line-height: 16px;
+    text-align: center;
+    background: #fff;
+}
+/*添加图片下面提示*/
+.upload-tip{
+    padding-left: 15px;
+    margin-top: 8px;
+}
+.upload-tip .color-red{
+    color: #ff0000;
+}
+/*提交按钮*/
+.info-btn-div{
+    padding: 0 15px;
+}
+.info-sub-btn{
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 20px auto;
+    padding: 15px 0;
+    width: 100%;
+    background: #ff9900;
+    border: 0;
+    color: #fff;
+}
+/*基础信息*/
+.form-block{
+    display: none;
+    background: #fff;
+    margin-bottom: 10px;
+}
+.form-item{
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    padding: 0 15px;
+    position: relative;
+    border-bottom: 1px solid #e7e7e7;
+}
+.form-item .type{
+    float: left;
+}
+.form-item input{
+    box-sizing: border-box;
+    padding-left: 50px;
+    float: left;
+    border: 0;
+    width: 75%;
+    height: 100%;
+    font-size: 14px;
+}
+.form-item .unit{
+    font-size: 16px;
+    position: absolute;
+    right: 15px;
+    top: 14px;
+    line-height: 15px;
+}
+.form-item input::-webkit-input-placeholder{
+    /*padding-left: 50px;*/
+}
+.form-item .selects{
+    float: left;
+    max-width:90px;
+    position: relative;
+}
+.form-item .house-sl{
+    float: left;
+    max-width:90px;
+    position: relative;
+}
+.form-item select{
+    border: 0;
+    background: none;
+    -webkit-appearance: none;
+    overflow: hidden;
+    width: 100%;
+    font-size: 14px;
+}
+.form-item .selects:after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 0;
+    border-width: 6px 4px 0;
+    border-style: solid;
+    border-color: #006699 transparent transparent;
+    margin-bottom: 2px;
+}
+.form-item .house-sl:after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 12px;
+    border-width: 6px 4px 0;
+    border-style: solid;
+    border-color: #006699 transparent transparent;
+    margin-bottom: 2px;
+}
+.form-item.drop:after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: solid #ccc;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+.form-item.drop select{
+    box-sizing: border-box;
+    float: left;
+    width: 75%;
+    height: 100%;
+}
+select.house-type{
+    padding-left: 50px;
+}
+select.house-num{
+    padding-left: 64px;
+}
+select.anjie{
+    padding-left: 36px;
+}
+select.ready-house{
+    padding-left: 22px;
+}
+.form-item.drop select.ready-house{
+    width: 65%;
+}
+.job-info input{
+    width: 70%;
+    padding-left: 24px;
+}
+.form-item.drop select.pd22{
+    padding-left: 22px;
+    width: 70%;
+}
+.form-item.drop select.pd50{
+    padding-left: 50px;
+    width: 70%;
+}
+.form-item.drop select.pd36{
+    padding-left: 36px;
+}
+.form-item input.pd36{
+    padding-left: 36px;
+}
+.company-info input{
+    -webkit-appearance: none;
+    background: none;
+}
+form[name=company]{
+    display: none;
+}
+/*.form-item .selects{
+    display: -webkit-box;
+
+}*/
+
+/*@media screen and (max-width: 374px) and (min-width: 361px){
+    .form-item select{
+        max-width:86px;
+    }
+}*/
+@media screen and (max-width: 360px)and (min-width: 321px){
+    .form-item .selects{
+        max-width:80px;
+    }
+    .form-item .house-sl{
+        max-width:70px;
+    }
+    .house-info input{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 320px){
+    .form-item .selects{
+        max-width:70px;
+    }
+    .form-item .house-sl{
+        max-width:60px;
+    }
+}
+
+　

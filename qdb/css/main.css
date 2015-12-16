@@ -28,12 +28,15 @@
 }
 .success-tips p{
 	text-align: center;
-	font-size: 16px;
+	font-size: 14px;
 	color: #999;
 }
 .success-tips .bigger{
 	font-size: 18px;
 	color: #66cc33;
+}
+.success-tips .back{
+    color:#006699;
 }
 .magintop{
 	margin-top: 27px;
@@ -49,6 +52,8 @@
     padding: 0 16px;
 }
 .login-logo{
+    color: #fff;
+    font-size: 16px;
     margin: 80px auto;
     text-align: center;
 }
@@ -58,7 +63,7 @@
 .login-form .item{
     display: -webkit-box;
     height: 50px;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.15);
     margin-bottom: 1px;
 }
 .login-form .item input{
@@ -108,12 +113,14 @@
     padding: 16px 0;
     margin-top: 30px;
     color: #fff;
-    background: rgba(255,255,255,0.4);
+    font-size: 18px;
+    background: rgba(255,255,255,0.16);
 }
 footer{
     width: 100%;
     position: absolute;
     bottom: 32px;
+    color: #cccccc;
 }
 footer p{
     text-align: center;

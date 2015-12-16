@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" /><!-- home screen app 全屏 -->
+    <title>房金所渠道宝</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/manage.css">
+    <script src="./js/jquery-1.9.0.min.js"></script>
+    <script src="./js/manage.js"></script>
+</head>
+<body class="ui-app">
+<div class="body-cover"></div>
+<div class="ui-page js-active">
+    <div class="ui-header">
+        <a href="/index" class="header-left back-prev"></a>
+        <h3>管理中心</h3>
+        <a href="javascript:;" class="header-right menu"></a>
+        <div class="drop-down">
+            <span class="triangle"></span>
+            <ul>
+                <li><a href="#">管理中心</a></li>
+                <li><a href="#">添加客户</a></li>
+                <li><a href="#">基本信息</a></li>
+                <li><a href="#">问题反馈</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="ui-page-content">
+        <div class="count clearfix">
+            <i class="middle"></i>
+            <div class="count-person">
+                <div>
+                    <p>
+                        <i></i>邀请客户数（人）</p>
+                    <p class="ft30">0</p>
+                </div>
+                <div>
+                    <p>意向客户数（人）</p>
+                    <p class="ft14">0</p>
+                </div>
+                <div>
+                    <p>成功客户数（人）</p>
+                    <p class="ft14">0</p>
+                </div>
+            </div>
+            <div class="count-money">
+                <div>
+                    <p>
+                        <i></i>待结算佣金（元）</p>
+                    <p class="ft30">0</p>
+                </div>
+                <div>
+                    <p>累计获得佣金（元）</p>
+                    <p class="ft14">0</p>
+                </div>
+            </div>
+        </div>
+        <div class="search-block">
+            <div class="search-text">
+                <i></i>
+                <input type="text" name="search" placeholder="请输入客户名称搜索">
+            </div>
+            <div class="search-date">
+                <span class="triangle-down">日期</span>
+                <div class="choose-date" style="display: none">
+                    <span class="triangle"></span>
+                    <span class="triangle-btm"></span>
+                    <ul>
+                        <li>全部</li>
+                        <li>2015.12</li>
+                        <li>2016.01</li>
+                        <li>2016.02</li>
+                        <li>2016.03</li>
+                        <li>2016.04</li>
+                        <li>2016.05</li>
+                        <li>2016.06</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="search-state">
+                <span class="triangle-up">状态</span>
+                <div class="choose-state">
+                    <span class="triangle"></span>
+                    <span class="triangle-btm"></span>
+                    <ul>
+                        <li>全部</li>
+                        <li>已申请</li>
+                        <li>协议中</li>
+                        <li>合同中</li>
+                        <li>批复中</li>
+                        <li>放款中</li>
+                        <li>已成功</li>
+                        <li>失败</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="result-block">
+            <div class="cover"></div>
+            <div class="result-header">
+                <ul>
+                    <li class="width90">日期</li>
+                    <li class="width104">客户名称</li>
+                    <li class="width98">贷款金额</li>
+                    <li class="width74">状态</li>
+                </ul>
+            </div>
+            <div class="result-body">
+                <div class="item">
+                    <div class="item-head">
+                        <ul>
+                            <li class="ft12 color-grey width90">2015.12.10</li>
+                            <li class="width104">136****6565</li>
+                            <li class="width98">400万</li>
+                            <li class="triangle-down color-green width74">已成功</li>
+                        </ul>
+                    </div>
+                    <div class="item-body">
+                        <div class="item-title">
+                            <span class="product ft14 ">信用贷：建行装修贷</span>
+                            <span class="get-amount color-orange">已获佣金：10000元</span>
+                        </div>
+                        <div class="item-desc clearfix">
+                           <div class="width25p">
+                               <p class="color-grey">合同金额</p>
+                               <p class="ft14 color-grey6">400万</p>
+                           </div>
+                           <div class="width25p">
+                               <p class="color-grey">合同时间</p>
+                               <p class="ft14 color-grey6">2015.12.10</p>
+                           </div>
+                           <div class="width25p">
+                               <p class="color-grey">回佣时间</p>
+                               <p class="ft14 color-grey6">2015.12.10</p>
+                           </div>
+                           <div class="width25p">
+                               <p class="color-grey">放款时间</p>
+                               <p class="ft14 color-grey6">2015.12.10</p>
+                           </div>
+                           <div class="width25p">
+                               <p class="color-grey">失败时间</p>
+                               <p class="ft14 color-grey6">2015.12.10</p>
+                           </div>
+                           <div class="width75p">
+                               <p class="color-grey">失败原因</p>
+                               <p class="ft14 color-grey6">客户不想贷款了客户不想贷款了客户了客</p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-head">
+                        <ul>
+                            <li class="ft12 color-grey width90">2015.12.10</li>
+                            <li class="width104">136****6565</li>
+                            <li class="width98">400万</li>
+                            <li class="triangle-down color-red width74">失败</li>
+                        </ul>
+                    </div>
+                    <div class="item-body">
+                        <div class="item-title">
+                            <span class="product ft14 ">信用贷：建行装修贷</span>
+                            <span class="get-amount color-orange">已获佣金：10000元</span>
+                        </div>
+                        <div class="item-desc clearfix">
+                            <div class="width25p">
+                                <p class="color-grey">合同金额</p>
+                                <p class="ft14 color-grey6">400万</p>
+                            </div>
+                            <div class="width25p">
+                                <p class="color-grey">合同时间</p>
+                                <p class="ft14 color-grey6">2015.12.10</p>
+                            </div>
+                            <div class="width25p">
+                                <p class="color-grey">回佣时间</p>
+                                <p class="ft14 color-grey6">2015.12.10</p>
+                            </div>
+                            <div class="width25p">
+                                <p class="color-grey">放款时间</p>
+                                <p class="ft14 color-grey6">2015.12.10</p>
+                            </div>
+                            <div class="width25p">
+                                <p class="color-grey">失败时间</p>
+                                <p class="ft14 color-grey6">2015.12.10</p>
+                            </div>
+                            <div class="width75p">
+                                <p class="color-grey">失败原因</p>
+                                <p class="ft14 color-grey6">客户不想贷款了客户不想贷款了客户了客</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-head">
+                        <ul>
+                            <li class="date-li ft12 color-grey width90">2015.12.10</li>
+                            <li class="phone-li width104">136****6565</li>
+                            <li class="width98">400万</li>
+                            <li class="triangle-down color-green width74">已成功</li>
+                        </ul>
+                    </div>
+                    <div class="item-body">
+                        <div class="item-title">
+                            <span class="product ft14 ">信用贷：建行装修贷</span>
+                            <span class="get-amount color-orange">已获佣金：10000元</span>
+                        </div>
+                        <div class="item-desc clearfix">
+                            <div class="width25p">
+                                <p class="color-grey">合同金额</p>
+                                <p class="ft14 color-grey6">400万</p>
+                            </div>
+                            <div class="width25p">
+                                <p class="color-grey">合同时间</p>
+                                <p class="ft14 color-grey6">2015.12.10</p>
+                            </div>
+                            <div class="width25p">
+                                <p class="color-grey">回佣时间</p>
+                                <p class="ft14 color-grey6">2015.12.10</p>
+                            </div>
+                            <div class="width25p">
+                                <p class="color-grey">放款时间</p>
+                                <p class="ft14 color-grey6">2015.12.10</p>
+                            </div>
+                            <div class="width25p">
+                                <p class="color-grey">失败时间</p>
+                                <p class="ft14 color-grey6">2015.12.10</p>
+                            </div>
+                            <div class="width75p">
+                                <p class="color-grey">失败原因</p>
+                                <p class="ft14 color-grey6">客户不想贷款了客户不想贷款了客户了客</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-head">
+                        <ul>
+                            <li class="date-li ft12 color-grey width90">2015.12.10</li>
+                            <li class="phone-li width104">136****6565</li>
+                            <li class="width98">400万</li>
+                            <li class="triangle-down color-red width74">失败</li>
+                        </ul>
+                    </div>
+                    <div class="item-body">
+                        <div class="item-title">
+                            <span class="product ft14 ">信用贷：建行装修贷</span>
+                            <span class="get-amount color-orange">已获佣金：10000元</span>
+                        </div>
+                        <div class="item-desc clearfix">
+                            <div class="width25p">
+                                <p class="color-grey">合同金额</p>
+                                <p class="ft14 color-grey6">400万</p>
+                            </div>
+                            <div class="width25p">
+                                <p class="color-grey">合同时间</p>
+                                <p class="ft14 color-grey6">2015.12.10</p>
+                            </div>
+                            <div class="width25p">
+                                <p class="color-grey">回佣时间</p>
+                                <p class="ft14 color-grey6">2015.12.10</p>
+                            </div>
+                            <div class="width25p">
+                                <p class="color-grey">放款时间</p>
+                                <p class="ft14 color-grey6">2015.12.10</p>
+                            </div>
+                            <div class="width25p">
+                                <p class="color-grey">失败时间</p>
+                                <p class="ft14 color-grey6">2015.12.10</p>
+                            </div>
+                            <div class="width75p">
+                                <p class="color-grey">失败原因</p>
+                                <p class="ft14 color-grey6">客户不想贷款了客户不想贷款了客户了客</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-head">
+                        <ul>
+                            <li class="date-li ft12 color-grey width90">2015.12.10</li>
+                            <li class="phone-li width104">136****6565</li>
+                            <li class="width98">400万</li>
+                            <li class="triangle-down color-green width74">已成功</li>
+                        </ul>
+                    </div>
+                    <div class="item-body">
+                        <div class="item-title">
+                            <span class="product ft14 ">信用贷：建行装修贷</span>
+                            <span class="get-amount color-orange">已获佣金：10000元</span>
+                        </div>
+                        <div class="item-desc clearfix">
+                            <div class="width25p">
+                                <p class="color-grey">合同金额</p>
+                                <p class="ft14 color-grey6">400万</p>
+                            </div>
+                            <div class="width25p">
+                                <p class="color-grey">合同时间</p>
+                                <p class="ft14 color-grey6">2015.12.10</p>
+                            </div>
+                            <div class="width25p">
+                                <p class="color-grey">回佣时间</p>
+                                <p class="ft14 color-grey6">2015.12.10</p>
+                            </div>
+                            <div class="width25p">
+                                <p class="color-grey">放款时间</p>
+                                <p class="ft14 color-grey6">2015.12.10</p>
+                            </div>
+                            <div class="width25p">
+                                <p class="color-grey">失败时间</p>
+                                <p class="ft14 color-grey6">2015.12.10</p>
+                            </div>
+                            <div class="width75p">
+                                <p class="color-grey">失败原因</p>
+                                <p class="ft14 color-grey6">客户不想贷款了客户不想贷款了客户了客</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-head">
+                        <ul>
+                            <li class="date-li ft12 color-grey width90">2015.12.10</li>
+                            <li class="phone-li width104">136****6565</li>
+                            <li class="width98">400万</li>
+                            <li class="triangle-down color-red width74">失败</li>
+                        </ul>
+                    </div>
+                    <div class="item-body">
+                        <div class="item-title">
+                            <span class="product ft14 ">信用贷：建行装修贷</span>
+                            <span class="get-amount color-orange">已获佣金：10000元</span>
+                        </div>
+                        <div class="item-desc clearfix">
+                            <div class="width25p">
+                                <p class="color-grey">合同金额</p>
+                                <p class="ft14 color-grey6">400万</p>
+                            </div>
+                            <div class="width25p">
+                                <p class="color-grey">合同时间</p>
+                                <p class="ft14 color-grey6">2015.12.10</p>
+                            </div>
+                            <div class="width25p">
+                                <p class="color-grey">回佣时间</p>
+                                <p class="ft14 color-grey6">2015.12.10</p>
+                            </div>
+                            <div class="width25p">
+                                <p class="color-grey">放款时间</p>
+                                <p class="ft14 color-grey6">2015.12.10</p>
+                            </div>
+                            <div class="width25p">
+                                <p class="color-grey">失败时间</p>
+                                <p class="ft14 color-grey6">2015.12.10</p>
+                            </div>
+                            <div class="width75p">
+                                <p class="color-grey">失败原因</p>
+                                <p class="ft14 color-grey6">客户不想贷款了客户不想贷款了客户了客</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-head">
+                        <ul>
+                            <li class="date-li ft12 color-grey width90">2015.12.10</li>
+                            <li class="phone-li width104">136****6565</li>
+                            <li class="width98">400万</li>
+                            <li class="triangle-down color-green width74">已成功</li>
+                        </ul>
+                    </div>
+                    <div class="item-body">
+                        <div class="item-title">
+                            <span class="product ft14 ">信用贷：建行装修贷</span>
+                            <span class="get-amount color-orange">已获佣金：10000元</span>
+                        </div>
+                        <div class="item-desc clearfix">
+                            <div class="width25p">
+                                <p class="color-grey">合同金额</p>
+                                <p class="ft14 color-grey6">400万</p>
+                            </div>
+                            <div class="width25p">
+                                <p class="color-grey">合同时间</p>
+                                <p class="ft14 color-grey6">2015.12.10</p>
+                            </div>
+                            <div class="width25p">
+                                <p class="color-grey">回佣时间</p>
+                                <p class="ft14 color-grey6">2015.12.10</p>
+                            </div>
+                            <div class="width25p">
+                                <p class="color-grey">放款时间</p>
+                                <p class="ft14 color-grey6">2015.12.10</p>
+                            </div>
+                            <div class="width25p">
+                                <p class="color-grey">失败时间</p>
+                                <p class="ft14 color-grey6">2015.12.10</p>
+                            </div>
+                            <div class="width75p">
+                                <p class="color-grey">失败原因</p>
+                                <p class="ft14 color-grey6">客户不想贷款了客户不想贷款了客户了客</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-head">
+                        <ul>
+                            <li class="date-li ft12 color-grey width90">2015.12.10</li>
+                            <li class="phone-li width104">136****6565</li>
+                            <li class="width98">400万</li>
+                            <li class="triangle-down color-red width74">失败</li>
+                        </ul>
+                    </div>
+                    <div class="item-body">
+                        <div class="item-title">
+                            <span class="product ft14 ">信用贷：建行装修贷</span>
+                            <span class="get-amount color-orange">已获佣金：10000元</span>
+                        </div>
+                        <div class="item-desc clearfix">
+                            <div class="width25p">
+                                <p class="color-grey">合同金额</p>
+                                <p class="ft14 color-grey6">400万</p>
+                            </div>
+                            <div class="width25p">
+                                <p class="color-grey">合同时间</p>
+                                <p class="ft14 color-grey6">2015.12.10</p>
+                            </div>
+                            <div class="width25p">
+                                <p class="color-grey">回佣时间</p>
+                                <p class="ft14 color-grey6">2015.12.10</p>
+                            </div>
+                            <div class="width25p">
+                                <p class="color-grey">放款时间</p>
+                                <p class="ft14 color-grey6">2015.12.10</p>
+                            </div>
+                            <div class="width25p">
+                                <p class="color-grey">失败时间</p>
+                                <p class="ft14 color-grey6">2015.12.10</p>
+                            </div>
+                            <div class="width75p">
+                                <p class="color-grey">失败原因</p>
+                                <p class="ft14 color-grey6">客户不想贷款了客户不想贷款了客户了客</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./js/flexible.js"></script>
+</body>
+</html>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" /><!-- home screen app 全屏 -->
+    <title>房金所渠道宝</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/add.css">
+    <script src="./js/jquery-1.9.0.min.js"></script>
+    <script src="./js/add_customer.js"></script>
+</head>
+<body class="ui-app">
+<div class="body-cover"></div>
+<div class="ui-page js-active">
+    <div class="ui-header">
+        <a href="/index" class="header-left back-prev"></a>
+        <h3>添加客户</h3>
+        <a href="javascript:;" class="header-right menu"></a>
+        <div class="drop-down">
+            <span class="triangle"></span>
+            <ul>
+                <li><a href="#">管理中心</a></li>
+                <li><a href="#">添加客户</a></li>
+                <li><a href="#">基本信息</a></li>
+                <li><a href="#">问题反馈</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="ui-page-content">
+            <div class="tab-block">
+                <span class="left-tips">客户类型</span>
+                <span class="tab tab1 active">个人贷款</span>
+                <span class="tab tab2">企业贷款</span>
+            </div>
+            <form name="personal">
+                <div class="item base-info">
+                    <div class="info base">
+                        <span class="left-tips">基本资料</span>
+                        <span class="plus">+</span>
+                    </div>
+                    <div class="form-block">
+                        <div class="form-item">
+                            <span class="type">贷款金额：</span>
+                            <input type="tel" name="amount_money" placeholder="输入金额">
+                            <span class="unit">元</span>
+                        </div>
+                        <div class="form-item">
+                            <span class="type">客户姓名：</span>
+                            <input type="text" name="amount_money" placeholder="请填写">
+                        </div>
+                        <div class="form-item">
+                            <span class="type">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</span>
+                            <input type="text" name="amount_money" placeholder="请填写">
+                        </div>
+                        <div class="form-item">
+                            <span class="type">手机号码：</span>
+                            <input type="text" name="amount_money" placeholder="请填写">
+                        </div>
+                        <div class="form-item">
+                            <span class="type">身份证号：</span>
+                            <input type="text" name="amount_money" placeholder="请填写">
+                        </div>
+                        <div class="form-item">
+                            <span class="type">客户地址：</span>
+                            <div class="selects">
+                                <select name="province" id="province">
+                                    <option value="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;省</option>
+                                    <option value="2">上海第三方的说法地方的萨芬的三分</option>
+                                </select>
+                            </div>
+                            <div class="selects">
+                                <select name="city" id="city">
+                                    <option value="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;市</option>
+                                    <option value="2">的发生发生的反倒是反倒是</option>
+                                </select>
+                            </div>
+                            <div class="selects">
+                                <select name="custom_area" id="area">
+                                    <option value="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区</option>
+                                    <option value="2">发第三方的说法的说法都是</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item house-info">
+                    <div class="info house">
+                        <span class="left-tips">房产信息</span>
+                        <span class="plus">+</span>
+                    </div>
+                    <div class="form-block">
+                        <div class="form-item">
+                            <span class="type">房产所在区域：</span>
+                            <div class="house-sl">
+                                <select name="house_province" id="house-province">
+                                    <option value="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;省</option>
+                                    <option value="2">上海第三方的说法地方的萨芬的三分</option>
+                                </select>
+                            </div>
+                            <div class="house-sl">
+                                <select name="house_city" id="house-city">
+                                    <option value="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;市</option>
+                                    <option value="2">的发生发生的反倒是反倒是</option>
+                                </select>
+                            </div>
+                            <div class="house-sl">
+                                <select name="house_area" id="house-area">
+                                    <option value="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区</option>
+                                    <option value="2">发第三方的说法的说法都是</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-item drop">
+                            <span class="type">房产类型：</span>
+                            <select class="house-type" name="house_type" id="house-type">
+                                <option value="1">请选择</option>
+                                <option value="2"></option>
+                            </select>
+                        </div>
+                        <div class="form-item drop">
+                            <span class="type">几套房：</span>
+                            <select class="house-num" name="house_area">
+                                <option value="1">请选择</option>
+                                <option value="2"></option>
+                            </select>
+                        </div>
+                        <div class="form-item drop">
+                            <span class="type">是否有按揭：</span>
+                            <select class="anjie" name="house_area">
+                                <option value="1">请选择</option>
+                                <option value="2"></option>
+                            </select>
+                        </div>
+                        <div class="form-item drop">
+                            <span class="type">是否有备用房：</span>
+                            <select class="ready-house" name="house_area">
+                                <option value="1">请选择</option>
+                                <option value="2"></option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="item job-info">
+                    <div class="info job">
+                        <span class="left-tips">工作信息</span>
+                        <span class="plus">+</span>
+                    </div>
+                    <div class="form-block">
+                        <div class="form-item">
+                            <span class="type">所在公司行业：</span>
+                            <input type="text" name="amount_money" placeholder="请填写">
+                        </div>
+                        <div class="form-item">
+                            <span class="type">所在公司职业：</span>
+                            <input type="text" name="amount_money" placeholder="请填写">
+                        </div>
+                        <div class="form-item drop">
+                            <span class="type">当前单位工龄：</span>
+                            <select class="pd22" name="house_type" id="">
+                                <option value="1">请选择</option>
+                                <option value="2"></option>
+                            </select>
+                        </div>
+                        <div class="form-item drop">
+                            <span class="type">有无缴纳社保：</span>
+                            <select class="pd22" name="house_area">
+                                <option value="1">请选择</option>
+                                <option value="2"></option>
+                            </select>
+                        </div>
+                        <div class="form-item">
+                            <span class="type">社保缴纳年限：</span>
+                            <input type="text" name="amount_money" placeholder="请填写">
+                        </div>
+                        <div class="form-item drop">
+                            <span class="type">每月平均收入：</span>
+                            <select class="pd22" name="house_area">
+                                <option value="1">请选择</option>
+                                <option value="2"></option>
+                            </select>
+                        </div>
+                        <div class="form-item drop">
+                            <span class="type">打卡工资：</span>
+                            <select class="pd50" name="house_area">
+                                <option value="1">请选择</option>
+                                <option value="2"></option>
+                            </select>
+                        </div>
+                        <div class="form-item drop">
+                            <span class="type">两年内信用：</span>
+                            <select class="pd36" name="house_area">
+                                <option value="1">请选择</option>
+                                <option value="2"></option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-pic">
+                    <span class="left-tips">添加附件</span>
+                    <div class="add-pic-logo">
+                        +
+                        <span class="cut">-</span>
+                    </div>
+                    <div class="add-pic-logo">
+                        +
+                        <span class="cut">-</span>
+                    </div>
+                    <div class="add-pic-logo">
+                        +
+                        <span class="cut">-</span>
+                    </div>
+                </div>
+                <p class="upload-tip"><span class="color-red">*</span>您可以上传客户的名片或房产证等图片。</p>
+                <div class="info-btn-div"><button class="info-sub-btn">提交</button></div>
+            </form>
+            <form name="company">
+            <div class="item base-info">
+                <div class="info base">
+                    <span class="left-tips">基本资料</span>
+                    <span class="plus">+</span>
+                </div>
+                <div class="form-block">
+                    <div class="form-item">
+                        <span class="type">贷款金额：</span>
+                        <input type="tel" name="amount_money" placeholder="输入金额">
+                        <span class="unit">元</span>
+                    </div>
+                    <div class="form-item">
+                        <span class="type">客户姓名：</span>
+                        <input type="text" name="amount_money" placeholder="请填写">
+                    </div>
+                    <div class="form-item">
+                        <span class="type">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</span>
+                        <input type="text" name="amount_money" placeholder="请填写">
+                    </div>
+                    <div class="form-item">
+                        <span class="type">手机号码：</span>
+                        <input type="text" name="amount_money" placeholder="请填写">
+                    </div>
+                    <div class="form-item">
+                        <span class="type">身份证号：</span>
+                        <input type="text" name="amount_money" placeholder="请填写">
+                    </div>
+                    <div class="form-item">
+                        <span class="type">客户地址：</span>
+                        <div class="selects">
+                            <select name="province" id="province">
+                                <option value="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;省</option>
+                                <option value="2">上海第三方的说法地方的萨芬的三分</option>
+                            </select>
+                        </div>
+                        <div class="selects">
+                            <select name="city" id="city">
+                                <option value="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;市</option>
+                                <option value="2">的发生发生的反倒是反倒是</option>
+                            </select>
+                        </div>
+                        <div class="selects">
+                            <select name="custom_area" id="area">
+                                <option value="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区</option>
+                                <option value="2">发第三方的说法的说法都是</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item house-info">
+                <div class="info house">
+                    <span class="left-tips">房产信息</span>
+                    <span class="plus">+</span>
+                </div>
+                <div class="form-block">
+                    <div class="form-item">
+                        <span class="type">房产所在区域：</span>
+                        <div class="house-sl">
+                            <select name="house_province" id="house-province">
+                                <option value="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;省</option>
+                                <option value="2">上海第三方的说法地方的萨芬的三分</option>
+                            </select>
+                        </div>
+                        <div class="house-sl">
+                            <select name="house_city" id="house-city">
+                                <option value="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;市</option>
+                                <option value="2">的发生发生的反倒是反倒是</option>
+                            </select>
+                        </div>
+                        <div class="house-sl">
+                            <select name="house_area" id="house-area">
+                                <option value="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区</option>
+                                <option value="2">发第三方的说法的说法都是</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-item drop">
+                        <span class="type">房产类型：</span>
+                        <select class="house-type" name="house_type" id="house-type">
+                            <option value="1">请选择</option>
+                            <option value="2"></option>
+                        </select>
+                    </div>
+                    <div class="form-item drop">
+                        <span class="type">几套房：</span>
+                        <select class="house-num" name="house_area">
+                            <option value="1">请选择</option>
+                            <option value="2"></option>
+                        </select>
+                    </div>
+                    <div class="form-item drop">
+                        <span class="type">是否有按揭：</span>
+                        <select class="anjie" name="house_area">
+                            <option value="1">请选择</option>
+                            <option value="2"></option>
+                        </select>
+                    </div>
+                    <div class="form-item drop">
+                        <span class="type">是否有备用房：</span>
+                        <select class="ready-house" name="house_area">
+                            <option value="1">请选择</option>
+                            <option value="2"></option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="item job-info">
+                <div class="info job">
+                    <span class="left-tips">工作信息</span>
+                    <span class="plus">+</span>
+                </div>
+                <div class="form-block">
+                    <div class="form-item">
+                        <span class="type">所在公司行业：</span>
+                        <input type="text" name="amount_money" placeholder="请填写">
+                    </div>
+                    <div class="form-item">
+                        <span class="type">所在公司职业：</span>
+                        <input type="text" name="amount_money" placeholder="请填写">
+                    </div>
+                    <div class="form-item drop">
+                        <span class="type">当前单位工龄：</span>
+                        <select class="pd22" name="house_type" id="">
+                            <option value="1">请选择</option>
+                            <option value="2"></option>
+                        </select>
+                    </div>
+                    <div class="form-item drop">
+                        <span class="type">有无缴纳社保：</span>
+                        <select class="pd22" name="house_area">
+                            <option value="1">请选择</option>
+                            <option value="2"></option>
+                        </select>
+                    </div>
+                    <div class="form-item">
+                        <span class="type">社保缴纳年限：</span>
+                        <input type="text" name="amount_money" placeholder="请填写">
+                    </div>
+                    <div class="form-item drop">
+                        <span class="type">每月平均收入：</span>
+                        <select class="pd22" name="house_area">
+                            <option value="1">请选择</option>
+                            <option value="2"></option>
+                        </select>
+                    </div>
+                    <div class="form-item drop">
+                        <span class="type">打卡工资：</span>
+                        <select class="pd50" name="house_area">
+                            <option value="1">请选择</option>
+                            <option value="2"></option>
+                        </select>
+                    </div>
+                    <div class="form-item drop">
+                        <span class="type">两年内信用：</span>
+                        <select class="pd36" name="house_area">
+                            <option value="1">请选择</option>
+                            <option value="2"></option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="item company-info">
+                <div class="info company">
+                    <span class="left-tips">企业信息</span>
+                    <span class="plus">+</span>
+                </div>
+                <div class="form-block">
+                    <div class="form-item">
+                        <span class="type">企业注册地：</span>
+                        <input class="pd36" type="text" name="" placeholder="请填写">
+                    </div>
+                    <div class="form-item">
+                        <span class="type">企业名称：</span>
+                        <input type="text" name="" placeholder="请填写">
+                    </div>
+                    <div class="form-item drop">
+                        <span class="type">注册时间：</span>
+                        <input type="date" name="" placeholder="请选择">
+                    </div>
+                    <div class="form-item drop">
+                        <span class="type">成立时间：</span>
+                        <input type="date" name="" placeholder="请选择">
+                    </div>
+                </div>
+            </div>
+            <div class="add-pic">
+                <span class="left-tips">添加附件</span>
+                <div class="add-pic-logo">
+                    +
+                    <span class="cut">-</span>
+                </div>
+                <div class="add-pic-logo">
+                    +
+                    <span class="cut">-</span>
+                </div>
+                <div class="add-pic-logo">
+                    +
+                    <span class="cut">-</span>
+                </div>
+            </div>
+            <p class="upload-tip"><span class="color-red">*</span>您可以上传客户的名片或房产证等图片。</p>
+            <div class="info-btn-div"><button class="info-sub-btn">提交</button></div>
+        </form>
+    </div>
+</div>
+<script src="./js/flexible.js"></script>
+</body>
+</html>
