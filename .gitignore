@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 valid/node_modules
 node_modules/*.*
 liepin/node_modules
+=======
+node_modules
+liepin/node_modules
+liepin/.idea
+>>>>>>> 8a01101a008787da23da9159835c1f34dac4da3a
 
