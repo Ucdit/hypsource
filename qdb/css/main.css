@@ -1,0 +1,131 @@
+/*问题反馈*/
+.feedback{
+	padding: 10px 17px;
+}
+.feedback textarea{
+	width: 100%;
+	height: 200px;
+	box-sizing:border-box;
+	-webkit-appearance:none;
+	border:1px solid #e7e7e7;
+	border-radius: 0;
+	margin-bottom: -4px;
+	resize : none;
+	padding: 10px 14px;
+}
+.feedback .sub-btn{
+	width: 100%;
+	border-radius: 0;
+	border:0;
+	background: #66cc33;
+	color: #fff;
+	padding: 16px 0;
+	margin-top: 20px;
+}
+/* 提交成功页面 */
+.success-tips{
+	margin-top: 106px;
+}
+.success-tips p{
+	text-align: center;
+	font-size: 14px;
+	color: #999;
+}
+.success-tips .bigger{
+	font-size: 18px;
+	color: #66cc33;
+}
+.success-tips .back{
+    color:#006699;
+}
+.magintop{
+	margin-top: 27px;
+}
+.grey{
+	color: #333;
+}
+/*登录*/
+.ui-app.blue{
+    background: #0072ab;
+}
+.login{
+    padding: 0 16px;
+}
+.login-logo{
+    color: #fff;
+    font-size: 16px;
+    margin: 80px auto;
+    text-align: center;
+}
+.login-logo img{
+    padding-bottom: 18px;
+}
+.login-form .item{
+    display: -webkit-box;
+    height: 50px;
+    background: rgba(0,0,0,0.15);
+    margin-bottom: 1px;
+}
+.login-form .item input{
+    padding-left: 5px;
+    border: 0;
+    height: 50px;
+    width: 100%;
+    background: none;
+    line-height: 16px;
+}
+.login-form .item .item-logo{
+     width: 40px;
+    -webkit-box-flex: 1;
+ }
+.item-logo span{
+    display: block;
+    outline: 1px solid;
+    width: 100%;
+    height: 50px;
+}
+.login-form .item .item-phone{
+    -webkit-box-flex: 6;
+}
+.login-form .item .item-code-btn{
+    -webkit-box-flex: 6;
+    position: relative;
+}
+.login-form .item .item-code{
+
+}
+.login-form .item .item-btn{
+    position: absolute;
+    height: 50px;
+    top: 0;
+    right: 0;
+    line-height: 50px;
+    padding-right: 15px;
+}
+.login-form .item .item-btn a{
+    border: 1px solid #fff;
+    padding: 8px 13px;
+    color: #fff;
+}
+.login-btn{
+    width: 100%;
+    border: 0;
+    padding: 16px 0;
+    margin-top: 30px;
+    color: #fff;
+    font-size: 18px;
+    background: rgba(255,255,255,0.16);
+}
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 32px;
+    color: #cccccc;
+}
+footer p{
+    text-align: center;
+}
+footer p a{
+    color: #fff;
+    text-decoration: underline;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+	<script type="text/javascript">
+		if(/Android (\d+\.\d+)/.test(navigator.userAgent)){
+			var version = parseFloat(RegExp.$1);
+			if(version>2.3){
+				var phoneScale = parseInt(window.screen.width)/640;
+				document.write('<meta name="viewport" content="width=640, minimum-scale = '+ phoneScale +', maximum-scale = '+ phoneScale +', target-densitydpi=device-dpi">');
+			}else{
+				document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+			}
+		}else{
+			document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+		}
+		//微信去掉下方刷新栏
+		if(navigator.userAgent.indexOf('MicroMessenger') >= 0){
+			document.addEventListener('WeixinJSBridgeReady', function() {
+				//WeixinJSBridge.call('hideToolbar');
+			});
+		}
+	</script>
+    <title>新年电子贺卡</title>
+	<link href="statics/css/content.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<audio autoplay="autoplay" loop="loop" src="statics/media/GetUp.mp3" id="Player" style="display:none;position:absolute;opacity:0">
+			您的浏览器不支持音频标签，建议换一个进行尝试哦~
+	</audio>
+	<div class="container container9">
+		<div class="line8"></div>
+		<div class="picDiv">
+			<div class="give">
+				<input class="to" type="text" placeholder="写给"/>
+				<div class="textDiv">
+					<textarea id="content" placeholder="写下祝福语..."></textarea>
+					<span class="tips">(你还可以输入<span class="num">75</span>字)</span>
+				</div>
+				<input id="from" type="text" placeholder="我的名字"/>
+			</div>
+		</div>
+		<a id="nextBtn" href="javascript:;"><img class="nextImg" alt="生成按钮" src="statics/images/wish.png"/></a>
+		<img class="feibo" alt="feibo" src="statics/images/feibo.png"/>
+	</div>
+	<span class="music_button"><i class="music stp"></i></span>
+	<span id="tips">打开</span>
+	<script src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
+		<script src="sea-base/seajs/seajs/2.2.0/sea.js"></script>
+		<script>
+			
+			// Set configuration
+			seajs.config({
+				base: "sea-base/",
+				alias: {
+					
+				}
+			});
+
+			// For development
+			if (location.href.indexOf("?dev") > 0) {
+				seajs.use("./sea-modules/make");
+			}
+			else {
+				seajs.use("./sea-modules/make");
+			}
+	
+		</script>
+</body>
+</html>
