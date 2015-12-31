@@ -88,6 +88,8 @@ define(function(require) {
 				reader.readAsDataURL(myfile);
 				reader.onload = function(e) {
 					pic1=e.target.result;
+					alert(pic1);
+					$('#sunImg').attr('src',pic1);
 				};
 				picNum++;
 				$("#upBtn").css("display","none");

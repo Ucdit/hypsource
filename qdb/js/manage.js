@@ -41,7 +41,7 @@ $(function(){
         $(this).hide();
     });
     /*日期*/
-    $('.choose-date ul li').on('click',function(){
+    $('.choose-date ul li').on('touchstart',function(){
         $('.search-date').children('.triangle-up').removeClass('triangle-up').addClass('triangle-down');
         date=$(this).text();
         $('.choose-date').hide();
@@ -60,7 +60,7 @@ $(function(){
             }
         });
     });
-    $('.choose-state ul li').on('click',function(){
+    $('.choose-state ul li').on('touchstart',function(){
         $('.search-state').children('.triangle-up').removeClass('triangle-up').addClass('triangle-down');
         state=$(this).text();
         $('.choose-state').hide();
@@ -80,8 +80,8 @@ $(function(){
         });
     });
     /*记录下拉*/
-    $('.item .item-head').on('touchstart',function(){
-        var item=$(this).parent().children('.item-body');
+    $('.item .item-head ul li:last-child').on('touchstart',function(){
+        var item=$(this).parents('.item').children('.item-body');
         if(item.hasClass('hide'))
         {
             item.removeClass('hide');
