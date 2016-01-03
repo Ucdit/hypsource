@@ -1,0 +1,25 @@
+.item{
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #e7e7e7;
+    background: #fff;
+    padding: 0 15px;
+    font-size: 14px;
+}
+.item span:last-child{
+    padding-left: 15px;
+}
+.baseinfo{
+    margin-top: 10px;
+}
+.baseinfo,.bankinfo,.manager_info{
+    margin-bottom: 10px;
+}
+.red{
+    color: #ff0000;
+}
+p{
+    padding-left: 15px;
+    color: #999;
+    font-size: 12px;
+}
