@@ -1,0 +1,13 @@
+@charset "UTF-8";
+@function pxToRem($px,$baseFontSize:37.5px) {
+  @return $px / $baseFontSize * 1rem;
+}
+.clearfixed:before{
+  content: '';
+  display: table;
+}
+.clearfixed:after{
+  content: '';
+  display: table;
+  clear: both;
+}
