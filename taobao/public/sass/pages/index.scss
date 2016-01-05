@@ -145,11 +145,31 @@ header{
     font-size: 0;
     float: right;
     width: pxToRem(224px);
-    border-left: pxToRem(1px) solid #f4f4f4;
     background: #fff;
     height: 100%;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background: #f4f4f4;
+      z-index: 100;
+    }
     &>div{
-      border-bottom: 1px solid #f4f4f4;
+      position: relative;
+      &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background: #f4f4f4;
+        z-index: 100;
+      }
     }
     .top{
       .top-left{
@@ -173,7 +193,17 @@ header{
       height: pxToRem(106px);
       background: url(../../img/bg/agj.png) no-repeat;
       background-size:contain ;
-      border-right: 1px solid #f4f4f4;
+      position: relative;
+      &:before{
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background: #f4f4f4;
+        z-index: 100;
+      }
     }
     .bottom-right{
       display: inline-block;
@@ -184,34 +214,11 @@ header{
     }
   }
 }
-.boundary{
-  line-height: pxToRem(35px);
-  background: #eeeeee;
-  padding: 0 pxToRem(6px);
-  height: pxToRem(35px);
-  .line{
-    vertical-align: middle;
-    display: inline-block;
-    border-bottom: 1px solid #e6e6e6;
-    width: pxToRem(144px);
-  }
-  .middle{
-    vertical-align: middle;
-    display: inline-block;
-    .csh-icon{
-      vertical-align: middle;
-      display: inline-block;
-      width: pxToRem(21px);
-      height: pxToRem(21px);
-      background: url(../../img/icon/csh.png) no-repeat;
-      background-size: contain;
-    }
-    .csh{
-      vertical-align: middle;
-      font-size: 14px;
-      color: #FC1C07;
-    }
-  }
+.csh-boundary{
+  @include boundary(url(../../img/icon/csh.png),#FC1C07)
+}
+.hpz-boundary{
+  @include boundary(url(../../img/icon/hpz.png),#6A29A4)
 }
 .csh-block{
   position: relative;
@@ -235,12 +242,6 @@ header{
     /*border-bottom: 1px solid #f4f4f4;*/
     &.bigger{
       width: pxToRem(150px);
-    }
-    &:nth-child(4){
-      border-right: 0;
-    }
-    &:last-child{
-      border-right: 0;
     }
   }
   .bg-jhs{
@@ -275,18 +276,77 @@ header{
     background: url(../../img/bg/tqc.png) no-repeat;
     background-size: contain;
   }
-  .border-right{
-    position: relative;
-    &:after{
-      content: '';
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 1px;
-      height: 100%;
-      background: #f4f4f4;
-      z-index:100;
+}
+.border-right{
+  position: relative;
+  &:after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: #f4f4f4;
+    z-index:100;
+  }
+}
+.hpz-block{
+  position: relative;
+  &:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background: #f4f4f4;
+    z-index: 100;
+  }
+  font-size: 0;
+  background: #fff;
+  a{
+    display: inline-block;
+    width: pxToRem(75px);
+    height: pxToRem(118px);
+    /*border-right: 1px solid #f4f4f4;*/
+    /*border-bottom: 1px solid #f4f4f4;*/
+    &.longer{
+      width: pxToRem(225px);
+    }
+    &.bigger{
+      width: pxToRem(150px);
     }
   }
+  .bg-qqg{
+    background: url(../../img/bg/qqg.png) no-repeat;
+    background-size: contain;
+  }
+  .bg-jyj{
+    background: url(../../img/bg/jyj.png) no-repeat;
+    background-size: contain;
+  }
+  .bg-jmp{
+    background: url(../../img/bg/jmp.jpg) no-repeat;
+    background-size: contain;
+  }
+  .bg-snyg{
+    background: url(../../img/bg/snyg.png) no-repeat;
+    background-size: contain;
+  }
+  .bg-mxs{
+    background: url(../../img/bg/mxs.png) no-repeat;
+    background-size: contain;
+  }
+  .bg-ppj{
+    background: url(../../img/bg/ppj.jpg) no-repeat;
+    background-size: contain;
+  }
+  .bg-lrg{
+    background: url(../../img/bg/lrg.png) no-repeat;
+    background-size: contain;
+  }
+}
+.yts-boundary{
+  @include boundary(url(../../img/icon/yts.png),#DC9C08)
 }
 

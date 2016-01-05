@@ -11,3 +11,61 @@
   display: table;
   clear: both;
 }
+.boundary{
+  line-height: pxToRem(35px);
+  background: #eeeeee;
+  padding: 0 pxToRem(6px);
+  height: pxToRem(35px);
+  .line{
+    vertical-align: middle;
+    display: inline-block;
+    border-bottom: 1px solid #e6e6e6;
+    width: pxToRem(144px);
+  }
+  .middle{
+    vertical-align: middle;
+    display: inline-block;
+    .csh-icon{
+      vertical-align: middle;
+      display: inline-block;
+      width: pxToRem(21px);
+      height: pxToRem(21px);
+      background: url(../../img/icon/csh.png) no-repeat;
+      background-size: contain;
+    }
+    .csh{
+      vertical-align: middle;
+      font-size: 14px;
+      color: #FC1C07;
+    }
+  }
+}
+@mixin boundary ($bg, $textColor){
+  line-height: pxToRem(35px);
+  background: #eeeeee;
+  padding: 0 pxToRem(6px);
+  height: pxToRem(35px);
+  .line{
+    vertical-align: middle;
+    display: inline-block;
+    border-bottom: 1px solid #e6e6e6;
+    width: pxToRem(144px);
+  }
+  .middle{
+    vertical-align: middle;
+    display: inline-block;
+    .csh-icon{
+      vertical-align: middle;
+      display: inline-block;
+      width: pxToRem(21px);
+      height: pxToRem(21px);
+      background:$bg;
+      background-size: contain;
+    }
+    .csh{
+      vertical-align: middle;
+      font-size: 14px;
+      color: $textColor;
+    }
+  }
+}
