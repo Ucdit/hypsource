@@ -57,12 +57,34 @@ header{
   }
 }
 .banner-block{
+  position: relative;
   //height:pxToRem(118px);
-  ul{
-    li{
-      img{
-        width:100%;
-        display: block;
+  .banner-dot{
+    position: absolute;
+    right: pxToRem(5px);
+    bottom: pxToRem(8px);
+    ul{
+      li{
+        margin-left: pxToRem(4px);
+        width: pxToRem(10px);
+        height: pxToRem(10px);
+        background: rgba(255,255,255,0.4);
+        display: inline-block;
+        border: 1px solid #eeeeee;
+        border-radius: 50%;
+      }
+      .active{
+        background: #ff5500;
+      }
+    }
+  }
+  .banner-content{
+    ul{
+      li{
+        img{
+          width:100%;
+          display: block;
+        }
       }
     }
   }
