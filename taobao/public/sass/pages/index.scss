@@ -10,6 +10,10 @@ html,body,div,p,h1,h2,h3,h4,h5,h6,section,nav,header,ul,li,input,span{
     font-size: pxToRem(31px);
   }*/
 }
+body{
+  width:pxToRem(375px);
+  margin:0 auto;
+}
 ul{
   list-style: none;
 }
@@ -53,11 +57,12 @@ header{
   }
 }
 .banner-block{
-  height:pxToRem(118px);
+  //height:pxToRem(118px);
   ul{
     li{
       img{
         width:100%;
+        display: block;
       }
     }
   }
