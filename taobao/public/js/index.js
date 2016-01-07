@@ -30,7 +30,6 @@ slider.prototype.init=function(){
     }
 }
 slider.prototype.doTouch=function(){
-
 }
 slider.prototype.move=function (width,speed,ele){
     ele.style.transition='transform '+speed+'s';
