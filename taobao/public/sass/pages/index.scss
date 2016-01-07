@@ -57,6 +57,7 @@ header{
   }
 }
 .banner-block{
+  overflow: hidden;
   position: relative;
   //height:pxToRem(118px);
   .banner-dot{
@@ -81,6 +82,8 @@ header{
   .banner-content{
     ul{
       li{
+        float: left;
+        width:pxToRem(375px);
         img{
           width:100%;
           display: block;

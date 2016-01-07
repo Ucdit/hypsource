@@ -8,13 +8,14 @@ var ele=document.getElementById("myhead");
 ele.addEventListener('touchstart',function(e){
     alert(e.touches.length);
 });
+slider({});
 function slider(opt){
     this.option={};
     this.option.element=document.getElementById(this.option.element||'#slider');
     this.option.direction=opt.direction||'left';
-    this.option.loop=opt.loop||'false';默认不循环;
+    this.option.loop=opt.loop||'false';//默认不循环;
     this.option.autoPlay=opt.autoPlay||'true';
-    this.option.spaceTime=opt.spaceTime||3000;毫秒为单位,间隔时间;
+    this.option.spaceTime=opt.spaceTime||3000;//毫秒为单位,间隔时间;
     this.option.speed=opt.speed||1;
     this.init();
 }
@@ -28,21 +29,20 @@ slider.prototype.init=function(){
     /*获得li的个数，banner个数*/
     this.size=this.option.element.children[1].children[0].children.length;
     this.index=0;
-    if(autoPlay){
-        /*自动播放*/
-    }
-    else{
-        /*事件触发*/
-    }
+    this.slideBlock=this.option.element.children[1];
+    this.slideBlock.style.width=this.scrollWidth*this.size+'px'
+    this.doTouch(this.slideBlock);
 }
 slider.prototype.doTouch=function(ele){
     var _this=this;
     ele.addEventListener('touchstart',function(e){
+        console.log('start');
         var point= e.touches[0];
         _this.startX=point.pageX;
         _this.startY=point.pageY;
     });
     ele.addEventListener('touchMove',function(e){
+        console.log('move');
         if(e.touches.length>1|| e.scale&& e.scale!==1){
             return;
         }
@@ -53,11 +53,18 @@ slider.prototype.doTouch=function(ele){
             /*手指移动了距离*/
             if(Math.abs(_this.distX)>0){
                 /*获得高度，先计算即将显示的内容的index*/
-                _this.move(_this.scrollWidth*_this.index+_this.distX,_this.option.speed,this);
+                if(_this.index==0&&_this.distX>0||_this.index==_this.size-1&&_this.distX<0)
+                {
+                    _this.move(_this.scrollWidth*_this.index+_this.distX*0.4,_this.option.speed,this);
+                }
+                else{
+                    _this.move(_this.scrollWidth*_this.index+_this.distX,_this.option.speed,this);
+                }
             }
         }
     });
     ele.addEventListener('touchEnd',function(e){
+        console.log('end');
         if(Math.abs(_this.distX)>0){
             if(Math.abs(_this.distX)>_this.scrollWidth/10&&_this.distX>0){
                 index=index==0?index:index-1;
@@ -65,13 +72,9 @@ slider.prototype.doTouch=function(ele){
             if(Math.abs(_this.distX)>_this.scrollWidth/10&&_this.distX<0){
                 index=index==_this.size-1?index:index+1;
             }
+            _this.move(_this.scrollWidth*_this.index+_this.distX,_this.option.speed,this);
         }
     });
-}
-slider.prototype.getIndex=function(dist){
-    if(dist<0){
-        this.index+=1;
-    }
 }
 slider.prototype.play=function(){
 
