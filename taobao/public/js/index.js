@@ -17,7 +17,7 @@ function Slider(opt){
     this.option.loop=opt.loop||'false';//默认不循环;
     this.option.autoPlay=opt.autoPlay||'true';
     this.option.spaceTime=opt.spaceTime||3000;//毫秒为单位,间隔时间;
-    this.option.speed=opt.speed||1;
+    this.option.speed=opt.speed||200;
     /*this.init();*/
     this.init=function(){
         var element=this.option.element,
@@ -59,6 +59,8 @@ function Slider(opt){
                         _this.move(-_this.scrollWidth*_this.index+_this.distX*0.4,_this.option.speed,this);
                     }
                     else{
+                        console.log('in');
+                        console.log(_this.distX);
                         _this.move(-_this.scrollWidth*_this.index+_this.distX,_this.option.speed,this);
                     }
                 }
@@ -82,7 +84,7 @@ function Slider(opt){
         });
     };
     this.move=function (width,speed,ele){
-        ele.style.transition='transform '+speed+'s';
+        ele.style.transition='transform '+speed+'ms';
         ele.style.transform='translate('+width+'px,0)';
 
     };
