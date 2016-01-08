@@ -37,12 +37,14 @@ function Slider(opt){
     this.doTouch=function(ele){
         var _this=this;
         ele.addEventListener('touchstart',function(e){
+            e.preventDefault();
             console.log('start');
             var point= e.touches[0];
             _this.startX=point.pageX;
             _this.startY=point.pageY;
         });
         ele.addEventListener('touchmove',function(e){
+            e.preventDefault();
             console.log('move');
             if(e.touches.length>1|| e.scale&& e.scale!==1){
                 return;
@@ -67,6 +69,7 @@ function Slider(opt){
             }
         });
         ele.addEventListener('touchend',function(e){
+            e.preventDefault();
             console.log('end');
             console.log(_this.distX);
             if(Math.abs(_this.distX)>0){
