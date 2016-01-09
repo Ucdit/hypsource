@@ -8,13 +8,13 @@ var ele=document.getElementById("myhead");
 ele.addEventListener('touchstart',function(e){
     alert(e.touches.length);
 });
-var slide=new Slider({direction:'left'});
+var slide=new Slider({direction:'left',loop:true});
     slide.init();
 function Slider(opt){
     this.option={};
     this.option.element=document.getElementById(this.option.element||'slider');
     this.option.direction=opt.direction||'left';
-    this.option.loop=opt.loop||'false';//默认不循环;
+    this.option.loop=opt.loop||false;//默认不循环;
     this.option.autoPlay=opt.autoPlay||'true';
     this.option.spaceTime=opt.spaceTime||3000;//毫秒为单位,间隔时间;
     this.option.speed=opt.speed||200;
@@ -27,25 +27,32 @@ function Slider(opt){
         /*获得移动宽度*/
         this.scrollWidth=document.body.clientWidth;
         /*获得li的个数，banner个数*/
-        console.log(this.option.element);
         this.size=this.option.element.children[1].children[0].children.length;
         this.index=0;
+        this.addEle(this.option.loop);
         this.slideBlock=this.option.element.children[1];
-        this.slideBlock.style.width=this.scrollWidth*this.size+'px';
+        this.slideBlock.style.width=this.scrollWidth*this.slideBlock.children[0].children.length+'px';
+        this.move(-this.scrollWidth,0,this.slideBlock);
         this.doTouch(this.slideBlock);
+    };
+    this.addEle=function(isLoop){
+        var ul=this.option.element.children[1].children[0];
+        var li=ul.children;
+        if(isLoop){
+            ul.insertBefore(li[this.size-1].cloneNode(true),li[0]);
+            ul.appendChild(li[1].cloneNode(true));
+        }
     };
     this.doTouch=function(ele){
         var _this=this;
         ele.addEventListener('touchstart',function(e){
             e.preventDefault();
-            console.log('start');
             var point= e.touches[0];
             _this.startX=point.pageX;
             _this.startY=point.pageY;
         });
         ele.addEventListener('touchmove',function(e){
             e.preventDefault();
-            console.log('move');
             if(e.touches.length>1|| e.scale&& e.scale!==1){
                 return;
             }
@@ -56,33 +63,54 @@ function Slider(opt){
                 /*手指移动了距离*/
                 if(Math.abs(_this.distX)>0){
                     /*获得高度，先计算即将显示的内容的index*/
-                    if(_this.index==0&&_this.distX>0||_this.index==_this.size-1&&_this.distX<0)
+                    if(!_this.option.loop&&(_this.index==0&&_this.distX>0||_this.index==_this.size-1&&_this.distX<0))
                     {
-                        _this.move(-_this.scrollWidth*_this.index+_this.distX*0.4,0,this);
+                        _this.option.loop?_this.move(-_this.scrollWidth*(_this.index+1)+_this.distX*0.4,0,this):_this.move(-_this.scrollWidth*_this.index+_this.distX*0.4,0,this);
                     }
                     else{
-                        console.log('in');
-                        console.log(_this.distX);
-                        _this.move(-_this.scrollWidth*_this.index+_this.distX,0,this);
+                       _this.option.loop? _this.move(-_this.scrollWidth*(_this.index+1)+_this.distX,0,this):_this.move(-_this.scrollWidth*_this.index+_this.distX,0,this);
                     }
                 }
             }
         });
         ele.addEventListener('touchend',function(e){
+            var me=this;
             e.preventDefault();
-            console.log('end');
-            console.log(_this.distX);
             if(Math.abs(_this.distX)>0){
                 if(Math.abs(_this.distX)>_this.scrollWidth/10&&_this.distX>0){
-                    console.log('>0');
-                    _this.index=_this.index==0?_this.index:_this.index-1;
+                    if(_this.option.loop){
+                        _this.index=_this.index==0?_this.size-1:_this.index-1;
+                        //_this.index=_this.index==0?_this.index:_this.index-1;
+                        //_this.index==_this.size-1?setTimeout(function(){_this.move(-_this.scrollWidth*_this.size,0,me)},_this.option.speed):_this.move(-_this.scrollWidth*(_this.index+1),_this.option.speed,this);
+                        if(_this.index==_this.size-1){
+                            _this.move(0,_this.option.speed,me);
+                            setTimeout(function(){_this.move(-_this.scrollWidth*_this.size,0,me)},_this.option.speed);
+                        }else{
+                            _this.move(-_this.scrollWidth*(_this.index+1),_this.option.speed,this)
+                        }
+                    }
+                    else{
+                        _this.index=_this.index==0?_this.index:_this.index-1;
+                        _this.move(-_this.scrollWidth*_this.index,_this.option.speed,this);
+                    }
                 }
                 if(Math.abs(_this.distX)>_this.scrollWidth/10&&_this.distX<0){
-                    console.log('<0');
-                    _this.index=_this.index==_this.size-1?_this.index:_this.index+1;
-                    console.log(_this.index);
+                    if(_this.option.loop){
+                        _this.index=_this.index==_this.size-1?0:_this.index+1;
+                        //_this.move(-_this.scrollWidth*(_this.index+1),_this.option.speed,this)
+                        //_this.index==0?setTimeout(function(){_this.move(-_this.scrollWidth,0,me)},_this.option.speed):'';
+                        if(_this.index==0){
+                            _this.move(-_this.scrollWidth*(_this.size+1),_this.option.speed,me);
+                            setTimeout(function(){_this.move(-_this.scrollWidth,0,me)},_this.option.speed);
+                        }else{
+                            _this.move(-_this.scrollWidth*(_this.index+1),_this.option.speed,this)
+                        }
+                    }
+                    else{
+                        _this.index=_this.index==_this.size-1?_this.index:_this.index+1;
+                        _this.move(-_this.scrollWidth*_this.index,_this.option.speed,this);
+                    }
                 }
-                _this.move(-_this.scrollWidth*_this.index,_this.option.speed,this);
             }
         });
     };
