@@ -58,12 +58,12 @@ function Slider(opt){
                     /*获得高度，先计算即将显示的内容的index*/
                     if(_this.index==0&&_this.distX>0||_this.index==_this.size-1&&_this.distX<0)
                     {
-                        _this.move(-_this.scrollWidth*_this.index+_this.distX*0.4,_this.option.speed,this);
+                        _this.move(-_this.scrollWidth*_this.index+_this.distX*0.4,0,this);
                     }
                     else{
                         console.log('in');
                         console.log(_this.distX);
-                        _this.move(-_this.scrollWidth*_this.index+_this.distX,_this.option.speed,this);
+                        _this.move(-_this.scrollWidth*_this.index+_this.distX,0,this);
                     }
                 }
             }
