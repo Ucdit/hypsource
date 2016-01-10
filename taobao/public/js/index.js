@@ -28,6 +28,7 @@ function Slider(opt){
         this.scrollWidth=document.body.clientWidth;
         /*获得li的个数，banner个数*/
         this.size=this.option.element.children[1].children[0].children.length;
+        this.dotLi=this.option.element.children[0].children[0].children;
         this.index=0;
         this.addEle(this.option.loop);
         this.slideBlock=this.option.element.children[1];
@@ -88,10 +89,14 @@ function Slider(opt){
                         }else{
                             _this.move(-_this.scrollWidth*(_this.index+1),_this.option.speed,this)
                         }
+                        /*doted*/
+                        _this.dotted(_this.dotLi,_this.index);
                     }
                     else{
                         _this.index=_this.index==0?_this.index:_this.index-1;
                         _this.move(-_this.scrollWidth*_this.index,_this.option.speed,this);
+                        /*doted*/
+                        _this.dotted(_this.dotLi,_this.index);
                     }
                 }
                 if(Math.abs(_this.distX)>_this.scrollWidth/10&&_this.distX<0){
@@ -105,12 +110,17 @@ function Slider(opt){
                         }else{
                             _this.move(-_this.scrollWidth*(_this.index+1),_this.option.speed,this)
                         }
+                        /*doted*/
+                        _this.dotted(_this.dotLi,_this.index);
                     }
                     else{
                         _this.index=_this.index==_this.size-1?_this.index:_this.index+1;
                         _this.move(-_this.scrollWidth*_this.index,_this.option.speed,this);
+                        /*doted*/
+                        _this.dotted(_this.dotLi,_this.index);
                     }
                 }
+
             }
         });
     };
@@ -119,6 +129,43 @@ function Slider(opt){
         ele.style.transform='translate('+width+'px,0)';
 
     };
+    this.dotted=function(lis,index){
+        var name_id;
+        /*把当前active的元素的active去掉*/
+
+        for(var i=0;i<lis.length;i++){
+            name_id=this.hasClass(lis[i],'active');
+            if(name_id===false){
+                continue;
+            }
+            else{
+                this.removeClass(lis[i],name_id,'active');
+            }
+        }
+        /*为当前index加上active*/
+        lis[index].className+=' active';
+
+    };
+    this.hasClass=function(ele,classname){
+        var name=ele.className.split(' ');
+        if(name.length==1){
+            return name[0]==classname?0:false;
+        }
+        else{
+            for(var i=0;i<name.length;i++){
+                if(name[i]==classname){
+                    return i;
+                }
+            }
+            return false;
+        }
+    }
+    this.removeClass=function(ele,i,className){
+        var name=ele.className.split(' ');
+        name[i]='';
+        name=name.join(" ");
+        ele.className=name;
+    }
 }
 /*Slider.prototype.init = function(){
     var element=this.option.element,
