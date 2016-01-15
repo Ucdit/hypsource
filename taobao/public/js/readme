@@ -1,0 +1,4 @@
+move(width,speed,ele)--------滑动方法
+dotted(lis,index)-------当前点active
+doTouch(ele)-------事件处理
+自动播放
