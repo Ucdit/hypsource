@@ -17,7 +17,7 @@ function Slider(opt){
     this.option.direction=opt.direction||'left';
     this.option.loop=opt.loop||false;//默认不循环;
     this.option.autoPlay=opt.autoPlay||true;
-    this.option.spaceTime=opt.spaceTime||3000;//毫秒为单位,间隔时间;
+    this.option.spaceTime=opt.spaceTime||5000;//毫秒为单位,间隔时间;
     this.option.speed=opt.speed||200;
     this.autoClear=null;
     /*this.init();*/
@@ -87,12 +87,12 @@ function Slider(opt){
         ele.addEventListener('touchend',function(e){
             var me=this;
             e.preventDefault();
-            _this.play(me);
+            clearInterval(_this.autoClear);
+            _this.play(me,true);
             _this.autoGo();
         });
     };
-    this.play=function(me){
-        console.log(this.index);
+    this.play=function(me,isTouch){
         var _this=this;
         if(Math.abs(_this.distX)>0){
             if(Math.abs(_this.distX)>_this.scrollWidth/10&&_this.distX>0){
@@ -114,6 +114,7 @@ function Slider(opt){
                     _this.move(-_this.scrollWidth*_this.index,_this.option.speed,me);
                     /*doted*/
                     _this.dotted(_this.dotLi,_this.index);
+
                 }
             }
             if(Math.abs(_this.distX)>_this.scrollWidth/10&&_this.distX<0){
@@ -131,8 +132,20 @@ function Slider(opt){
                     _this.dotted(_this.dotLi,_this.index);
                 }
                 else{
-                    _this.index=_this.index==_this.size-1?_this.index:_this.index+1;
-                    _this.move(-_this.scrollWidth*_this.index,_this.option.speed,me);
+                    /*自动播放，设置_this.distX>0,最后一个滑到第一个比较特殊*/
+                    if(_this.option.autoPlay&&!isTouch){
+                        console.log('yes');
+                        _this.index=_this.index==_this.size-1?0:_this.index+1;
+                        if(_this.index==0){
+                            _this.move(0,_this.option.speed,me);
+                        }else{
+                            _this.move(-_this.scrollWidth*_this.index,_this.option.speed,me);
+                        }
+
+                    }else{
+                        _this.index=_this.index==_this.size-1?_this.index:_this.index+1;
+                        _this.move(-_this.scrollWidth*_this.index,_this.option.speed,me);
+                    }
                     /*doted*/
                     _this.dotted(_this.dotLi,_this.index);
                 }
@@ -144,7 +157,7 @@ function Slider(opt){
         this.autoClear=setInterval(function(){
             /*判断是不是循环播放，，根据index*/
             _this.distX=-_this.scrollWidth/4;
-            _this.play(_this.slideBlock);
+            _this.play(_this.slideBlock,false);
         },this.option.spaceTime);
     };
     this.move=function (width,speed,ele){
