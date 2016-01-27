@@ -95,11 +95,11 @@ function Slider(opt){
     this.play=function(me,isTouch){
         var _this=this;
         if(Math.abs(_this.distX)>0){
+            console.log(_this.distX);
+            console.log(this.scrollWidth/10);
             if(Math.abs(_this.distX)>_this.scrollWidth/10&&_this.distX>0){
                 if(_this.option.loop){
                     _this.index=_this.index==0?_this.size-1:_this.index-1;
-                    //_this.index=_this.index==0?_this.index:_this.index-1;
-                    //_this.index==_this.size-1?setTimeout(function(){_this.move(-_this.scrollWidth*_this.size,0,me)},_this.option.speed):_this.move(-_this.scrollWidth*(_this.index+1),_this.option.speed,this);
                     if(_this.index==_this.size-1){
                         _this.move(0,_this.option.speed,me);
                         setTimeout(function(){_this.move(-_this.scrollWidth*_this.size,0,me)},_this.option.speed);
@@ -114,7 +114,14 @@ function Slider(opt){
                     _this.move(-_this.scrollWidth*_this.index,_this.option.speed,me);
                     /*doted*/
                     _this.dotted(_this.dotLi,_this.index);
-
+                }
+            }
+            else if(Math.abs(_this.distX)<_this.scrollWidth/10&&_this.distX>0){
+                if(_this.option.loop){
+                    _this.move(-_this.scrollWidth*(_this.index+1),_this.option.speed,me);
+                }
+                else{
+                    _this.move(-_this.scrollWidth*_this.index,_this.option.speed,me);
                 }
             }
             if(Math.abs(_this.distX)>_this.scrollWidth/10&&_this.distX<0){
@@ -148,6 +155,13 @@ function Slider(opt){
                     }
                     /*doted*/
                     _this.dotted(_this.dotLi,_this.index);
+                }
+            }else if(Math.abs(_this.distX)<_this.scrollWidth/10&&_this.distX<0){
+                if(_this.option.loop){
+                    _this.move(-_this.scrollWidth*(_this.index+1),_this.option.speed,me);
+                }
+                else{
+                    _this.move(-_this.scrollWidth*_this.index,_this.option.speed,me);
                 }
             }
         }
@@ -194,13 +208,28 @@ function Slider(opt){
             }
             return false;
         }
-    }
+    };
     this.removeClass=function(ele,i,className){
         var name=ele.className.split(' ');
         name[i]='';
         name=name.join(" ");
         ele.className=name;
-    }
+    };
+    /*小点的点击事件*/
+    this.dotChange=function(){
+        this.dotLi.addEventListener('touchstart',function(e){
+            e.preventDefault();
+            console.log(e);
+
+        });
+        for(var i= 0;i<this.size;i++){
+            this.dotLi[i].addEventListener('touchstart',function(e){
+
+            });
+        }
+    };
+    /*下一个*/
+    /*上一个*/
 }
 /*Slider.prototype.init = function(){
     var element=this.option.element,
