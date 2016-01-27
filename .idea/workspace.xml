@@ -2,164 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cdd403e-700d-4f20-8301-0285f7738892" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LazyLoad/images/001.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LazyLoad/images/002.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LazyLoad/images/003.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LazyLoad/images/004.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LazyLoad/images/005.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LazyLoad/images/006.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LazyLoad/images/007.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LazyLoad/images/008.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LazyLoad/images/009.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LazyLoad/js/grey.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/bestImg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/bestWish.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/bestWord.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/bg1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/bg2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/bg3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/bg4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/cold.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/dot.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/fast.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/feibo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/happy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/hpn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/hpn1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/lBall.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/lDotBlue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/lDotGreen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/lDotGreenS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/lDotPink.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/lDotRedS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/lDotYellow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/line.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/line2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/line3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/lingshi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/loading-ico.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/loading-txt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/makeBtn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/makeBtnC.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/musicIcon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/new.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/pic01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/pic02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/pic03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/pic04.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/pic05.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/pic1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/plus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/rBall.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/rBlueDot.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/rBlueDotS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/rect.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/rect1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/red.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/saveBtn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/saveBtnC.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/sendBtn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/sendBtnC.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/shareImg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/sunImg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/think.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/thisYear.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/waitImg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/wish.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/wishBtnC.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/year.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/yes.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/yiwai.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/images/yule.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/media/1.default.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/media/1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/media/GetUp.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qdb/img/icon/back-prev-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yx/statics/images/around.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yx/statics/images/backg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yx/statics/images/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yx/statics/images/renwu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yx/statics/images/split.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yx/statics/images/title_word.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/hypsource.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LazyLoad/LazyLoadTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LazyLoad/js/jquery-1.7.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LazyLoad/js/jquery.lazyload.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PIE.htc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/admin.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/check_explorer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/lib/getInfo.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/lib/image2.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/makePage.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/makePic.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/sea-base/jquery/easing/1.3.0/easing-debug.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/sea-base/jquery/easing/1.3.0/easing.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/sea-base/jquery/easing/1.3.0/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/sea-base/jquery/jquery/1.10.1/jquery-debug.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/sea-base/jquery/jquery/1.10.1/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/sea-base/jquery/jquery/1.10.1/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/sea-base/seajs/seajs/2.1.0/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/sea-base/seajs/seajs/2.1.0/sea-debug.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/sea-base/seajs/seajs/2.1.0/sea.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/sea-base/seajs/seajs/2.1.0/sea.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/sea-base/seajs/seajs/2.1.1/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/sea-base/seajs/seajs/2.1.1/sea-debug.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/sea-base/seajs/seajs/2.1.1/sea.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/sea-base/seajs/seajs/2.1.1/sea.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/sea-base/seajs/seajs/2.2.0/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/sea-base/seajs/seajs/2.2.0/sea-debug.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/sea-base/seajs/seajs/2.2.0/sea.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/sea-base/zepto/zepto/0.8/zepto.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/sea-modules/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/sea-modules/jquery.royalslider.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/sea-modules/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/sea-modules/make.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/sea-modules/resource.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/sea-modules/royalslider.page.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/sea-modules/vqd.loading.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/sea-modules/zepto.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/css/content.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/less-modules/main.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newyear/statics/less-modules/royalslider.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qdb/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qdb/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qdb/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qdb/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qdb/.idea/qdb.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qdb/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qdb/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qdb/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qdb/add_customer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qdb/ask.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qdb/css/add.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qdb/css/app.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qdb/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qdb/css/manage.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qdb/custom_success.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qdb/js/add_customer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qdb/js/flexible.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qdb/js/jquery-1.9.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qdb/js/manage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qdb/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qdb/manage.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qdb/success.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yx/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yx/statics/css/common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/circle.css" afterPath="$PROJECT_DIR$/css/circle.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hypsource.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -181,70 +24,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/qdb/login.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taobao/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.4444447">
-              <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+            <state vertical-scroll-proportion="-3.3333333">
+              <caret line="30" column="27" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/qdb/css/main.css">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/taobao/public/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.333333">
-              <caret line="116" column="14" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manage.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/qdb/manage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.65284973">
-              <caret line="405" column="33" selection-start-line="405" selection-start-column="33" selection-end-line="405" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.8217822">
+              <caret line="231" column="0" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
               <folding>
-                <element signature="n#div#1;n#div#0;n#div#2;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#2;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#2;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#2;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#div#2;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#5;n#div#2;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#6;n#div#2;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#7;n#div#2;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#1432#1676#0" expanded="false" />
+                <element signature="e#1708#5835#0" expanded="false" />
+                <element signature="e#5877#5995#0" expanded="false" />
+                <element signature="e#6032#6431#0" expanded="false" />
+                <element signature="e#6474#6805#0" expanded="false" />
+                <element signature="e#6852#6979#0" expanded="false" />
+                <element signature="e#6982#9234#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/qdb/js/manage.js">
+      <file leaf-file-name="gua.js" pinned="false" current-in-tab="false">
+        <entry file="file://H:/demo/lotteryLT/statics/js/gua.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="89" column="34" selection-start-line="89" selection-start-column="34" selection-end-line="89" selection-end-column="34" />
+              <caret line="299" column="7" selection-start-line="299" selection-start-column="0" selection-end-line="299" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manage.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/qdb/css/manage.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.5263157">
-              <caret line="249" column="18" selection-start-line="249" selection-start-column="18" selection-end-line="249" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/qdb/css/app.css">
+      <file leaf-file-name="base.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taobao/public/sass/base.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="126" column="8" selection-start-line="126" selection-start-column="8" selection-end-line="126" selection-end-column="8" />
+              <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -264,6 +87,14 @@
         <option value="$PROJECT_DIR$/qdb/css/manage.css" />
         <option value="$PROJECT_DIR$/qdb/js/manage.js" />
         <option value="$PROJECT_DIR$/qdb/manage.html" />
+        <option value="$PROJECT_DIR$/taobao/public/css/pages/index.css" />
+        <option value="$PROJECT_DIR$/taobao/public/sass/base.scss" />
+        <option value="$PROJECT_DIR$/taobao/public/sass/pages/index.scss" />
+        <option value="$PROJECT_DIR$/taobao/index.html" />
+        <option value="$PROJECT_DIR$/taobao/public/js/index.js" />
+        <option value="$PROJECT_DIR$/taobao/jhs.html" />
+        <option value="$PROJECT_DIR$/taobao/public/sass/pages/jhs.scss" />
+        <option value="$PROJECT_DIR$/taobao/public/js/jhs.js" />
       </list>
     </option>
   </component>
@@ -305,6 +136,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -323,89 +155,70 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hypsource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hypsource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qdb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hypsource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hypsource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qdb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hypsource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hypsource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qdb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="icon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hypsource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hypsource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qdb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="js-jscs-nodeInterpreter" value="D:\nodejs\node.exe" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="3cdd403e-700d-4f20-8301-0285f7738892" name="Default" comment="" />
@@ -416,10 +229,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17349927" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16617863" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -452,23 +265,210 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/taobao/public/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="131" column="28" selection-start-line="131" selection-start-column="25" selection-end-line="131" selection-end-column="28" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#1432#1676#0" expanded="false" />
+            <element signature="e#1708#5835#0" expanded="false" />
+            <element signature="e#5877#5995#0" expanded="false" />
+            <element signature="e#6032#6431#0" expanded="false" />
+            <element signature="e#6474#6805#0" expanded="false" />
+            <element signature="e#6852#6979#0" expanded="false" />
+            <element signature="e#6982#9234#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://H:/demo/lotteryLT/statics/js/gua.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="299" column="7" selection-start-line="299" selection-start-column="0" selection-end-line="299" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taobao/public/sass/base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taobao/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taobao/public/sass/pages/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="66" column="13" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taobao/public/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#1432#1676#0" expanded="false" />
+            <element signature="e#1708#5835#0" expanded="false" />
+            <element signature="e#5877#5995#0" expanded="false" />
+            <element signature="e#6032#6431#0" expanded="false" />
+            <element signature="e#6474#6805#0" expanded="false" />
+            <element signature="e#6852#6979#0" expanded="false" />
+            <element signature="e#6982#9234#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/TouchSlide1.1-00/TouchSlide.1.1.source.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="204" column="5" selection-start-line="204" selection-start-column="5" selection-end-line="204" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://H:/demo/lotteryLT/statics/js/gua.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="299" column="7" selection-start-line="299" selection-start-column="0" selection-end-line="299" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taobao/public/sass/base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taobao/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="63" selection-start-line="34" selection-start-column="63" selection-end-line="34" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taobao/public/sass/pages/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="81" column="18" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taobao/public/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#1432#1676#0" expanded="false" />
+            <element signature="e#1708#5835#0" expanded="false" />
+            <element signature="e#5877#5995#0" expanded="false" />
+            <element signature="e#6032#6431#0" expanded="false" />
+            <element signature="e#6474#6805#0" expanded="false" />
+            <element signature="e#6852#6979#0" expanded="false" />
+            <element signature="e#6982#9234#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/TouchSlide1.1-00/TouchSlide.1.1.source.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="204" column="5" selection-start-line="204" selection-start-column="5" selection-end-line="204" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://H:/demo/lotteryLT/statics/js/gua.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="299" column="7" selection-start-line="299" selection-start-column="0" selection-end-line="299" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taobao/public/sass/base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taobao/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taobao/public/sass/pages/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taobao/public/sass/base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/qdb/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/qdb/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="116" column="14" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qdb/manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qdb/js/manage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="89" column="34" selection-start-line="89" selection-start-column="34" selection-end-line="89" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qdb/css/manage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="249" column="18" selection-start-line="249" selection-start-column="18" selection-end-line="249" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -476,7 +476,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="126" column="8" selection-start-line="126" selection-start-column="8" selection-end-line="126" selection-end-column="8" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qdb/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qdb/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qdb/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="126" column="8" selection-start-line="126" selection-start-column="8" selection-end-line="126" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -491,31 +511,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="126" column="8" selection-start-line="126" selection-start-column="8" selection-end-line="126" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qdb/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.4444447">
-          <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qdb/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.333333">
-          <caret line="116" column="14" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/qdb/css/manage.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.5263157">
+        <state vertical-scroll-proportion="0.0">
           <caret line="249" column="18" selection-start-line="249" selection-start-column="18" selection-end-line="249" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -523,7 +525,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="89" column="34" selection-start-line="89" selection-start-column="34" selection-end-line="89" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -531,15 +532,151 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.65284973">
           <caret line="405" column="33" selection-start-line="405" selection-start-column="33" selection-end-line="405" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qdb/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37823835">
+          <caret line="116" column="14" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taobao/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taobao/public/css/pages/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qdb/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15544042">
+          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taobao/public/sass/base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LazyLoad/js/jquery.lazyload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newyear/sea-modules/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newyear/sea-modules/resource.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newyear/sea-modules/royalslider.page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="135" column="8" selection-start-line="135" selection-start-column="8" selection-end-line="135" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newyear/sea-modules/vqd.loading.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://H:/demo/lotteryLT/statics/js/gua.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="299" column="7" selection-start-line="299" selection-start-column="0" selection-end-line="299" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://H:/demo/打地鼠游戏活动/statics/js/setMouse.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10891089">
+          <caret line="261" column="42" selection-start-line="261" selection-start-column="42" selection-end-line="261" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/TouchSlide1.1-00/TouchSlide.1.1.source.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.02970297">
+          <caret line="204" column="5" selection-start-line="204" selection-start-column="5" selection-end-line="204" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taobao/public/sass/pages/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.032667875">
+          <caret line="69" column="13" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taobao/public/sass/pages/jhs.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taobao/public/js/jhs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20792079">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taobao/jhs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12953368">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taobao/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.3333333">
+          <caret line="30" column="27" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taobao/public/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8217822">
+          <caret line="231" column="0" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
           <folding>
-            <element signature="n#div#1;n#div#0;n#div#2;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#2;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#2;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#2;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#2;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#5;n#div#2;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#6;n#div#2;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#7;n#div#2;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#1432#1676#0" expanded="false" />
+            <element signature="e#1708#5835#0" expanded="false" />
+            <element signature="e#5877#5995#0" expanded="false" />
+            <element signature="e#6032#6431#0" expanded="false" />
+            <element signature="e#6474#6805#0" expanded="false" />
+            <element signature="e#6852#6979#0" expanded="false" />
+            <element signature="e#6982#9234#0" expanded="false" />
           </folding>
         </state>
       </provider>
