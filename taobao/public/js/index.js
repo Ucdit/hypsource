@@ -42,6 +42,7 @@ function Slider(opt){
         if(this.option.autoPlay){
             this.autoGo();
         }
+        this.dotChange();
     };
     /*循环添加前后li项*/
     this.addEle=function(isLoop){
@@ -93,10 +94,9 @@ function Slider(opt){
         });
     };
     this.play=function(me,isTouch){
+        console.log('play');
         var _this=this;
         if(Math.abs(_this.distX)>0){
-            console.log(_this.distX);
-            console.log(this.scrollWidth/10);
             if(Math.abs(_this.distX)>_this.scrollWidth/10&&_this.distX>0){
                 if(_this.option.loop){
                     _this.index=_this.index==0?_this.size-1:_this.index-1;
@@ -141,7 +141,7 @@ function Slider(opt){
                 else{
                     /*自动播放，设置_this.distX>0,最后一个滑到第一个比较特殊*/
                     if(_this.option.autoPlay&&!isTouch){
-                        console.log('yes');
+                        //console.log('yes');
                         _this.index=_this.index==_this.size-1?0:_this.index+1;
                         if(_this.index==0){
                             _this.move(0,_this.option.speed,me);
@@ -217,15 +217,27 @@ function Slider(opt){
     };
     /*小点的点击事件*/
     this.dotChange=function(){
-        this.dotLi.addEventListener('touchstart',function(e){
-            e.preventDefault();
-            console.log(e);
-
-        });
+        var _this=this;
         for(var i= 0;i<this.size;i++){
-            this.dotLi[i].addEventListener('touchstart',function(e){
-
-            });
+            console.log('aaa');
+            (function(i){
+                _this.dotLi[i].addEventListener('touchstart',function(e){
+                    /*console.log('index1:'+_this.index);
+                    if(_this.index>i){
+                        console.log('xx1');
+                        _this.distX=-_this.scrollWidth/4;
+                    }
+                    else{
+                        console.log('xx2');
+                        _this.distX=_this.scrollWidth/4;
+                    }*/
+                    /*需要重新写移动的距离move*/
+                    _this.index=i;
+                    console.log('index2:'+_this.index);
+                    _this.play(_this.slideBlock,false);
+                    console.log(i);
+                });
+            })(i);
         }
     };
     /*下一个*/
