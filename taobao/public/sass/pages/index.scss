@@ -60,6 +60,20 @@ header{
   overflow: hidden;
   position: relative;
   //height:pxToRem(118px);
+  #prev-btn{
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    background: red;
+  }
+  #next-btn{
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    background: red;
+  }
   .banner-dot{
     position: absolute;
     right: pxToRem(5px);

@@ -9,17 +9,19 @@ var ele=document.getElementById("myhead");
 ele.addEventListener('touchstart',function(e){
     alert(e.touches.length);
 });
-var slide=new Slider({direction:'left',loop:false});
+var slide=new Slider({direction:'left',loop:true});
     slide.init();
 function Slider(opt){
     this.option={};
     this.option.element=document.getElementById(this.option.element||'slider');
     this.option.direction=opt.direction||'left';
     this.option.loop=opt.loop||false;//默认不循环;
-    this.option.autoPlay=opt.autoPlay||true;
+    this.option.autoPlay=opt.autoPlay||false;
     this.option.spaceTime=opt.spaceTime||5000;//毫秒为单位,间隔时间;
     this.option.speed=opt.speed||200;
     this.autoClear=null;
+    this.option.prevCell=opt.prevCell ||"prev-btn"; // 前一页按钮,穿入的prevCell等穿.aaa,id选择器
+    this.option.nextCell=opt.nextCell ||"next-btn"; // 后一页按钮
     /*this.init();*/
     this.init=function(){
         var element=this.option.element,
@@ -43,6 +45,8 @@ function Slider(opt){
             this.autoGo();
         }
         this.dotChange();
+        this.prev();
+        this.next();
     };
     /*循环添加前后li项*/
     this.addEle=function(isLoop){
@@ -90,11 +94,12 @@ function Slider(opt){
             e.preventDefault();
             clearInterval(_this.autoClear);
             _this.play(me,true);
-            _this.autoGo();
+            if(_this.option.autoPlay){
+                _this.autoGo();
+            }
         });
     };
     this.play=function(me,isTouch){
-        console.log('play');
         var _this=this;
         if(Math.abs(_this.distX)>0){
             if(Math.abs(_this.distX)>_this.scrollWidth/10&&_this.distX>0){
@@ -141,7 +146,6 @@ function Slider(opt){
                 else{
                     /*自动播放，设置_this.distX>0,最后一个滑到第一个比较特殊*/
                     if(_this.option.autoPlay&&!isTouch){
-                        //console.log('yes');
                         _this.index=_this.index==_this.size-1?0:_this.index+1;
                         if(_this.index==0){
                             _this.move(0,_this.option.speed,me);
@@ -219,29 +223,48 @@ function Slider(opt){
     this.dotChange=function(){
         var _this=this;
         for(var i= 0;i<this.size;i++){
-            console.log('aaa');
             (function(i){
                 _this.dotLi[i].addEventListener('touchstart',function(e){
-                    /*console.log('index1:'+_this.index);
                     if(_this.index>i){
-                        console.log('xx1');
-                        _this.distX=-_this.scrollWidth/4;
-                    }
-                    else{
-                        console.log('xx2');
                         _this.distX=_this.scrollWidth/4;
-                    }*/
+                        _this.index=i==_this.size-1?_this.size:i+1;
+                    }
+                    else if(_this.index<i){
+                        _this.distX=-_this.scrollWidth/4;
+                        _this.index=i==0?0:i-1;
+                    }
                     /*需要重新写移动的距离move*/
-                    _this.index=i;
-                    console.log('index2:'+_this.index);
                     _this.play(_this.slideBlock,false);
-                    console.log(i);
                 });
             })(i);
         }
     };
-    /*下一个*/
     /*上一个*/
+    this.prev=function(){
+        var _this=this;
+        var prevBtn=document.getElementById(this.option.prevCell);
+        prevBtn.addEventListener('touchstart',function(e){
+            clearInterval(_this.autoClear);
+            _this.distX=_this.scrollWidth/4;
+            _this.play(_this.slideBlock,false);
+            if(_this.option.autoPlay){
+                _this.autoGo();
+            }
+        });
+    };
+    /*下一个*/
+    this.next=function(){
+        var _this=this;
+        var nextBtn=document.getElementById(this.option.nextCell);
+        nextBtn.addEventListener('touchstart',function(e){
+            clearInterval(_this.autoClear);
+            _this.distX=-_this.scrollWidth/4;
+            _this.play(_this.slideBlock,false);
+            if(_this.option.autoPlay){
+                _this.autoGo();
+            }
+        });
+    };
 }
 /*Slider.prototype.init = function(){
     var element=this.option.element,
