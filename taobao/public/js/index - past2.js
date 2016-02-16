@@ -7,13 +7,6 @@
 * 2016.2.15修改之后可以让滑块滑动，只要修改index就可以了,扩展功能思路清晰
 *
 */
-document.body.addEventListener('touchstart',function(e){
-    /*e.preventDefault();*/
-    //e.stopPropagation();
-    console.log(11111111);
-    /*解决方法一，fastclick.js*/
-    //滚动的时候也会触发
-});
 var ele=document.getElementById("myhead");
 ele.addEventListener('touchstart',function(e){
     alert(e.touches.length);

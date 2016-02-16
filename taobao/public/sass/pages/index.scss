@@ -57,6 +57,7 @@ header{
   }
 }
 .banner-block{
+  width:300px;
   overflow: hidden;
   position: relative;
   //height:pxToRem(118px);
@@ -98,7 +99,7 @@ header{
     ul{
       li{
         float: left;
-        width:pxToRem(375px);
+        //width:pxToRem(375px);
         img{
           width:100%;
           display: block;
