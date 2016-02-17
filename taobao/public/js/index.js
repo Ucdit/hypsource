@@ -5,9 +5,8 @@
 * 先默认宽度为屏幕宽度
 * 2016.1.5添加新功能----自动播放
 * 2016.2.15修改之后可以让滑块滑动，只要修改index就可以了,扩展功能思路清晰
-*2016.2.17修改之后可以设置垂直滚动或者水平滚动
-* ------------------------------------
-* 接下来优化：
+*2016.2.17
+* 修改之后可以设置垂直滚动或者水平滚动
 * 进入每一屏幕，如果有设置函数，就执行相应函数，完成相应操作
 *
 */
@@ -22,8 +21,16 @@ var ele=document.getElementById("myhead");
 ele.addEventListener('touchstart',function(e){
     alert(e.touches.length);
 });
-var slide=new Slider({direction:'left',loop:true,direction:'horizon'});
+var slide=new Slider({direction:'left',loop:true,direction:'horizon',startFun:mystart});
     slide.init();
+function mystart(index,num){
+    switch (index){
+        case 0:console.log('index00');break;
+        case 1:console.log('index11');break;
+        case 2:console.log('index22');break;
+        case 3:console.log('index33');break;
+    }
+}
 function Slider(opt){
     this.option={};
     this.option.element=document.getElementById(this.option.element||'slider');
@@ -35,6 +42,7 @@ function Slider(opt){
     this.autoClear=null;
     this.option.prevCell=opt.prevCell ||"prev-btn"; // 前一页按钮,穿入的prevCell等穿.aaa,id选择器
     this.option.nextCell=opt.nextCell ||"next-btn"; // 后一页按钮
+    this.option.startFun=opt.startFun;//startFun(index,num)
     /*this.init();*/
     this.init=function(){
         var element=this.option.element,
@@ -81,6 +89,8 @@ function Slider(opt){
         this.dotChange();
         this.prev();
         this.next();
+        /*首屏startFun执行*/
+        this.doStartFun();
     };
     /*循环添加前后li项*/
     this.addEle=function(isLoop){
@@ -139,10 +149,19 @@ function Slider(opt){
                 _this.autoGo();
             }
         });
+        /*ele.addEventListener('webkitTransitionEnd',function(e){
+            _this.doStartFun();
+        });*/
+    };
+    this.doStartFun=function(){
+        if(this.option.startFun&&typeof this.option.startFun=='function'){
+            this.option.startFun(this.index,this.size);
+        }
     };
     /*isTouch：区分自动播放，或者人为滑动*/
     this.play=function(me,isTouch){
         var _this=this;
+        console.log('play');
         /*-------------------------------*/
         switch(_this.option.loop){
             /*循环*/
@@ -183,7 +202,9 @@ function Slider(opt){
         /*doted*/
         _this.dotted(_this.dotLi,_this.index);
         /*-------------------------------*/
-
+        /*切屏之后马上执行相应函数*/
+        setTimeout(_this.doStartFun.call(_this),_this.option.speed);
+        //_this.doStartFun();
     };
     this.autoGo=function(){
         var _this=this;
