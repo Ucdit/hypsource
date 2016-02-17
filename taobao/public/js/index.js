@@ -5,20 +5,24 @@
 * 先默认宽度为屏幕宽度
 * 2016.1.5添加新功能----自动播放
 * 2016.2.15修改之后可以让滑块滑动，只要修改index就可以了,扩展功能思路清晰
+*2016.2.17修改之后可以设置垂直滚动或者水平滚动
+* ------------------------------------
+* 接下来优化：
+* 进入每一屏幕，如果有设置函数，就执行相应函数，完成相应操作
 *
 */
-document.body.addEventListener('touchstart',function(e){
-    /*e.preventDefault();*/
+/*document.body.addEventListener('touchstart',function(e){
+    e.preventDefault();
     //e.stopPropagation();
     console.log(11111111);
-    /*解决方法一，fastclick.js*/
+    //解决方法一，fastclick.js
     //滚动的时候也会触发
-});
+});*/
 var ele=document.getElementById("myhead");
 ele.addEventListener('touchstart',function(e){
     alert(e.touches.length);
 });
-var slide=new Slider({direction:'left',loop:false});
+var slide=new Slider({direction:'left',loop:true,direction:'horizon'});
     slide.init();
 function Slider(opt){
     this.option={};
@@ -40,7 +44,9 @@ function Slider(opt){
             eachLi,
             liNum;
         /*获得移动宽度*/
-        this.scrollWidth=this.option.element.clientWidth;
+        this.width=this.option.element.clientWidth;
+        this.height=this.option.element.clientHeight;
+        this.scrollDist=direction=='horizon'?this.width:this.height;
         /*获得li的个数，banner个数*/
         this.size=this.option.element.children[1].children[0].children.length;
         this.dotLi=this.option.element.children[0].children[0].children;
@@ -51,11 +57,22 @@ function Slider(opt){
         liNum=eachLi.length;
         for(var i=0;i<liNum;i++)
         {
-            eachLi[i].style.width=this.scrollWidth+'px';
+            if(direction=='horizon'){
+                eachLi[i].style.width=this.width+'px';
+            }
+            else{
+                eachLi[i].style.height=this.height+'px';
+            }
         }
-        this.slideBlock.style.width=this.scrollWidth*this.slideBlock.children[0].children.length+'px';
+        /*根据滑动方向，设置宽度或高度*/
+        if(direction=='horizon'){
+            this.slideBlock.style.width=this.scrollDist*this.slideBlock.children[0].children.length+'px';
+        }
+        else{
+            this.slideBlock.style.height=this.scrollDist*this.slideBlock.children[0].children.length+'px';
+        }
         if(this.option.loop){
-            this.move(-this.scrollWidth,0,this.slideBlock);
+            this.move(-this.scrollDist,0,this.slideBlock);
         }
         this.doTouch(this.slideBlock);
         if(this.option.autoPlay){
@@ -94,17 +111,18 @@ function Slider(opt){
                 _this.distX=point.pageX-_this.startX;
                 _this.distY=point.pageY-_this.startY;
                 /*手指移动了距离*/
-                if(Math.abs(_this.distX)>0){
+                _this.dist=_this.option.direction=='horizon'?_this.distX:_this.distY;
+                if(Math.abs(_this.dist)>0){
                     /*不是循环，第一屏和最后一屏，继续滑动，距离变化比较慢
                     *是循环第一屏和最后一屏正常速度滑动
                     */
-                    if(!_this.option.loop&&(_this.index==0&&_this.distX>0||_this.index==_this.size-1&&_this.distX<0))
+                    if(!_this.option.loop&&(_this.index==0&&_this.dist>0||_this.index==_this.size-1&&_this.dist<0))
                     {
                         /*不是循环且首尾屏，移动过程速度减慢*/
-                        _this.move(-_this.scrollWidth*_this.index+_this.distX*0.4,0,this);
+                        _this.move(-_this.scrollDist*_this.index+_this.dist*0.4,0,this);
                     }
                     else{
-                       _this.option.loop? _this.move(-_this.scrollWidth*(_this.index+1)+_this.distX,0,this):_this.move(-_this.scrollWidth*_this.index+_this.distX,0,this);
+                       _this.option.loop? _this.move(-_this.scrollDist*(_this.index+1)+_this.dist,0,this):_this.move(-_this.scrollDist*_this.index+_this.dist,0,this);
                     }
                 }
             }
@@ -113,8 +131,8 @@ function Slider(opt){
             var me=this;
             e.preventDefault();
             clearInterval(_this.autoClear);
-            if(Math.abs(_this.distX)>_this.scrollWidth/10){
-                _this.distX>0?_this.index--:_this.index++;
+            if(Math.abs(_this.dist)>_this.scrollDist/10){
+                _this.dist>0?_this.index--:_this.index++;
             }
             _this.play(me,true);
             if(_this.option.autoPlay){
@@ -138,14 +156,14 @@ function Slider(opt){
                  }*/
                 if(_this.index==_this.size){
                     _this.index=0;
-                    _this.move(-_this.scrollWidth*(_this.size+1),_this.option.speed,me);
-                    setTimeout(function(){_this.move(-_this.scrollWidth,0,me)},_this.option.speed);
+                    _this.move(-_this.scrollDist*(_this.size+1),_this.option.speed,me);
+                    setTimeout(function(){_this.move(-_this.scrollDist,0,me)},_this.option.speed);
                 }else if(_this.index==-1){
                     _this.index=_this.size-1;
                     _this.move(0,_this.option.speed,me);
-                    setTimeout(function(){_this.move(-_this.scrollWidth*_this.size,0,me)},_this.option.speed);
+                    setTimeout(function(){_this.move(-_this.scrollDist*_this.size,0,me)},_this.option.speed);
                 }else{
-                    _this.move(-_this.scrollWidth*(_this.index+1),_this.option.speed,me)
+                    _this.move(-_this.scrollDist*(_this.index+1),_this.option.speed,me)
                 }
                 break;
             /*不循环*/
@@ -157,7 +175,7 @@ function Slider(opt){
                     _this.index=isTouch?_this.size-1:0;
                 }
                 console.log(_this.index);
-                _this.move(-_this.scrollWidth*_this.index,_this.option.speed,me);
+                _this.move(-_this.scrollDist*_this.index,_this.option.speed,me);
                 break;
             default:
                 break;
@@ -177,7 +195,12 @@ function Slider(opt){
     };
     this.move=function (width,speed,ele){
         ele.style.transition='transform '+speed+'ms';
-        ele.style.transform='translate('+width+'px,0)';
+        if(this.option.direction=='horizon'){
+            ele.style.transform='translate('+width+'px,0)';
+        }
+        else{
+            ele.style.transform='translate(0,'+width+'px)';
+        }
 
     };
     this.dotted=function(lis,index){
@@ -266,65 +289,6 @@ function Slider(opt){
         });
     };
 }
-/*Slider.prototype.init = function(){
-    var element=this.option.element,
-        direction=this.option.direction,
-        scrollWidth,
-        autoPlay=option.autoPlay;
-    /!*获得移动宽度*!/
-    this.scrollWidth=document.body.clientWidth;
-    /!*获得li的个数，banner个数*!/
-    this.size=this.option.element.children[1].children[0].children.length;
-    this.index=0;
-    this.slideBlock=this.option.element.children[1];
-    this.slideBlock.style.width=this.scrollWidth*this.size+'px';
-    this.doTouch(this.slideBlock);
-};
-Slider.prototype.doTouch=function(ele){
-    var _this=this;
-    ele.addEventListener('touchstart',function(e){
-        console.log('start');
-        var point= e.touches[0];
-        _this.startX=point.pageX;
-        _this.startY=point.pageY;
-    });
-    ele.addEventListener('touchMove',function(e){
-        console.log('move');
-        if(e.touches.length>1|| e.scale&& e.scale!==1){
-            return;
-        }
-        else{
-            var point= e.touches[0];
-            _this.distX=point.pageX-_this.startX;
-            _this.distY=point.pageY-_this.startY;
-            /!*手指移动了距离*!/
-            if(Math.abs(_this.distX)>0){
-                /!*获得高度，先计算即将显示的内容的index*!/
-                if(_this.index==0&&_this.distX>0||_this.index==_this.size-1&&_this.distX<0)
-                {
-                    _this.move(_this.scrollWidth*_this.index+_this.distX*0.4,_this.option.speed,this);
-                }
-                else{
-                    _this.move(_this.scrollWidth*_this.index+_this.distX,_this.option.speed,this);
-                }
-            }
-        }
-    });
-    ele.addEventListener('touchEnd',function(e){
-        console.log('end');
-        if(Math.abs(_this.distX)>0){
-            if(Math.abs(_this.distX)>_this.scrollWidth/10&&_this.distX>0){
-                index=index==0?index:index-1;
-            }
-            if(Math.abs(_this.distX)>_this.scrollWidth/10&&_this.distX<0){
-                index=index==_this.size-1?index:index+1;
-            }
-            _this.move(_this.scrollWidth*_this.index+_this.distX,_this.option.speed,this);
-        }
-    });
-}
-Slider.prototype.move=function (width,speed,ele){
-    ele.style.transition='transform '+speed+'s';
-    ele.style.transform='translate('+width+'px,0)';
-
-}*/
+/*var a=new A();a.init();放在这里不行，a.init没有这个方法，因为init是函数表达式形式，必须执行到表达式，函数才能被解析调用，跟函数的构造函数声明不一样*/
+function A(){console.log(1);}A.prototype.init=function(){console.log(2);};
+var a=new A();a.init();
