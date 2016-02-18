@@ -185,7 +185,7 @@
                     .find("img")
                     .attr("src", img + (isMobile ? "_40x40.jpg" : "_80x80.jpg"))
                     .fadeIn();
-            }, (resortDots.length * 2 - index) * 30);
+            },(resortDots.length * 2 - index) * 30);
         });
 
         setTimeout(function(){
