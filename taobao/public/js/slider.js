@@ -1,31 +1,10 @@
 /*author hyp
 * 2016.1.5添加新功能----自动播放
 * 2016.2.15修改之后可以让滑块滑动，只要修改index就可以了,扩展功能思路清晰
-*2016.2.17
+* 2016.2.17
 * 修改之后可以设置垂直滚动或者水平滚动
 * 进入每一屏幕，如果有设置函数，就执行相应函数，完成相应操作
 */
-/*document.body.addEventListener('touchstart',function(e){
-    e.preventDefault();
-    //e.stopPropagation();
-    console.log(11111111);
-    //解决方法一，fastclick.js
-    //滚动的时候也会触发
-});*/
-var ele=document.getElementById("myhead");
-ele.addEventListener('touchstart',function(e){
-    alert(e.touches.length);
-});
-var slide=new Slider({direction:'left',loop:true,direction:'horizon',startFun:mystart});
-    slide.init();
-function mystart(index,num){
-    switch (index){
-        case 0:console.log('index00');break;
-        case 1:console.log('index11');break;
-        case 2:console.log('index22');break;
-        case 3:console.log('index33');break;
-    }
-}
 function Slider(opt){
     this.option={};
     this.option.element=document.getElementById(this.option.element||'slider');
@@ -40,6 +19,7 @@ function Slider(opt){
     this.option.startFun=opt.startFun;//startFun(index,num)
     /*this.init();*/
     this.init=function(){
+        /*在开头声明变量，避免作用域提升*/
         var element=this.option.element,
             direction=this.option.direction,
             scrollWidth,
@@ -305,6 +285,3 @@ function Slider(opt){
         });
     };
 }
-/*var a=new A();a.init();放在这里不行，a.init没有这个方法，因为init是函数表达式形式，必须执行到表达式，函数才能被解析调用，跟函数的构造函数声明不一样*/
-function A(){console.log(1);}A.prototype.init=function(){console.log(2);};
-var a=new A();a.init();
